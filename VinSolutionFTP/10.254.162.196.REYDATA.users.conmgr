@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="10.254.162.196.REYDATA.users"
+  DTS:DTSID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=10.254.162.196;User ID=users;Initial Catalog=VINSolutions_API;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}10.254.162.196.REYDATA.users;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="PBwWlUnc6g=="
+        p4:IV="0beUpSXJWJE=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">FkcP4SAA1+qEYG14IyoEeyMEIEL+cebI0K/U/AmDmOefKYBBb0vesmF8vzB5dGEvMAcD61uTTeJdYJ6+eu2d+TYkjHffH0RHti/6z/kl0IOgIhCSx+4chIVoJ30iBkXrVTykA1RL4SAN7qAyYxWBkReXKZ+z0BXy</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

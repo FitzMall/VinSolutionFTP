@@ -7,21 +7,22 @@
   DTS:CreatorName="FITZMALL\striplingj"
   DTS:DTSID="{559D5FB5-C4A4-4E94-B883-FAA85C300F9E}"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="11.0.7001.0"
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="10"
   DTS:ObjectName="UserAccess"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{83B492DD-FBFA-4865-AE49-CFC76FE6240C}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{BF187E8D-CEF6-456B-9966-E3A2BB14693B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[UserAccessConn]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{94A5A02F-B31B-4098-8A79-E307484EB236}"
+      DTS:Description="UserAccessConn"
+      DTS:DTSID="{B499EEFD-000F-40E1-B149-930E7B44D7BC}"
       DTS:ObjectName="UserAccessConn">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::CSVFile]</DTS:PropertyExpression>
@@ -41,7 +42,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerID"
-              DTS:DTSID="{06D5BED4-0690-4209-A72F-1F012BEA95B4}"
+              DTS:DTSID="{192F66B3-3885-4D14-B739-961EA85BF147}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +50,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="UserID"
-              DTS:DTSID="{03B09E3A-C78E-4B30-91D4-CAC7CCC6B716}"
+              DTS:DTSID="{21F1FC71-24CD-43B4-B93A-A50B814BDF70}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FirstName"
-              DTS:DTSID="{E580932A-5027-4EB2-9EC4-6999027E7AE5}"
+              DTS:DTSID="{A2156B4E-8AAE-4192-9CB8-C8B50336B9E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,16 +68,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LastName"
-              DTS:DTSID="{87D67D6C-070C-41B1-BBAD-6ACD9BC976DA}"
+              DTS:DTSID="{0C9D9A8D-27D9-4E3C-BDEF-CFF80082347A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="300"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailAddress"
-              DTS:DTSID="{5F5C85F6-79FD-4D73-BCBF-C886EE04F906}"
+              DTS:DTSID="{CED780C4-9640-4992-9215-619EAC5D3B46}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +85,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="InventoryAccessLevelID"
-              DTS:DTSID="{C2B3404C-F89B-482E-AC6A-9EF77B4E65C3}"
+              DTS:DTSID="{96F6AC84-7DBE-4D5B-8F71-2B4C02C27C79}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="InventoryAccessLevelName"
-              DTS:DTSID="{88AF35B4-FDD8-422B-8CA7-6B618F3EC5A0}"
+              DTS:DTSID="{3E160347-0CA4-43D5-A4A9-2F0C9336B440}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CRMAccessLevelID"
-              DTS:DTSID="{295E63F1-B527-4BCB-8753-34B9908A076A}"
+              DTS:DTSID="{0F4EDD65-7F65-4ABB-A7CF-2F0588B29493}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +112,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CRMAccessLevelName"
-              DTS:DTSID="{11B3DA99-ED55-4871-AD6E-BFAF334C262A}"
+              DTS:DTSID="{CBC78628-B50C-4F70-AABE-DE5651DA8294}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -119,7 +120,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="SalespersonInd"
-              DTS:DTSID="{EF879C1B-6ED6-4FF6-BB29-784422CBE3B1}"
+              DTS:DTSID="{EEB7D278-6FF4-4B0D-B5FD-AACAD7CE4C49}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -127,7 +128,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="InternetSalespersonInd"
-              DTS:DTSID="{F3C2360C-3B7A-41B3-9C2A-32CEA405BD25}"
+              DTS:DTSID="{0D2B36CD-37FB-496E-A7B3-B70518882258}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -135,7 +136,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="SalesManagerInd"
-              DTS:DTSID="{AA13D358-21BE-4FBA-9474-A4FA865F62C3}"
+              DTS:DTSID="{AA23FEE5-BB9D-4057-8DA7-BB9B28F32968}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -143,7 +144,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="BDAgentInd"
-              DTS:DTSID="{DCE5CBA3-72EF-46A7-9EED-CDD0CDE86AB7}"
+              DTS:DTSID="{DBCC0ED0-161B-4B82-ADCC-6926188859D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -151,7 +152,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CSIAgentInd"
-              DTS:DTSID="{241429CB-86F2-4BB2-9D1C-C1876DBA7CC6}"
+              DTS:DTSID="{BABBA5EC-33CF-4C33-974E-192003CFF035}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -159,7 +160,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="ServiceAgentInd"
-              DTS:DTSID="{F0309DB3-E302-45DD-8213-5E9BCAFDB652}"
+              DTS:DTSID="{A678B526-DD55-4135-9EEA-C6E76890CAE2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +168,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="FinanceMgrInd"
-              DTS:DTSID="{8F78718B-32C1-4E67-AC5A-1963A5FAD328}"
+              DTS:DTSID="{B69F86C4-FFAD-4B39-BB34-6DEBCDE1CBDC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +177,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="UserGroupName"
-              DTS:DTSID="{65AB55BD-DB82-461E-9AA8-496F6CA337A0}"
+              DTS:DTSID="{760A2552-958D-4BC3-A34E-C3F5266B2942}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -185,15 +186,24 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="RecordStatusCode"
-              DTS:DTSID="{F390334A-F52B-4E5F-9F0E-7A088D6F61E6}"
+              DTS:DTSID="{E23AD20A-D66B-417B-8789-7E9451B7D98F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastUpdatedUTCDate"
+              DTS:DTSID="{D257287D-70CB-412C-B578-1DE12D3B1841}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:DataType="135"
               DTS:TextQualified="True"
-              DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{7F585553-B695-4989-A338-E501BA3DAEAD}"
+              DTS:ObjectName="DMSSalesRepID"
+              DTS:DTSID="{6DBE14D2-AA5D-4991-B427-984EB551D5E8}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -251,6 +261,15 @@
           Language="CSharp"
           ReadOnlyVariables="CSVFileName, OrigZipFileName, ProcessedZipfileName"
           ReadWriteVariables="User::CSVFile,User::OrigZipFile,User::ProcessedZipFile">
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -370,35 +389,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_e937cf18c7194891b96145fdb376a027.Properties.Settings.get_Default():ST_e937cf18c7194891b96145fdb376a027.Properties.Sett" +
-    "ings")]
-
-namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -630,6 +620,35 @@ namespace ST_e937cf18c7194891b96145fdb376a027
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_e937cf18c7194891b96145fdb376a027.Properties.Settings.get_Default():ST_e937cf18c7194891b96145fdb376a027.Properties.Sett" +
+    "ings")]
+
+namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -659,15 +678,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -866,7 +876,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Delete CSV File"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
@@ -915,11 +925,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <components>
             <component
               refId="Package\Import CSV File\Execute UserAccess SP"
-              componentClassID="DTSTransform.OLEDBCommand.3"
+              componentClassID="{93FFEC66-CBC8-4C7F-9C6A-CB1C17A7567D}"
               contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
               name="Execute UserAccess SP"
               usesDispositions="true"
+              validateExternalMetadata="True"
               version="2">
               <properties>
                 <property
@@ -931,7 +942,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_UserAccess ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_UserAccess_6 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -940,8 +951,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Execute UserAccess SP.Connections[OleDbConnection]"
-                  connectionManagerID="{6CBBD2D9-84F6-4BC9-AC93-6919CEFC3A46}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.jjstest.users]"
+                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -959,12 +970,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       cachedName="DealerID"
                       externalMetadataColumnId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@DealerID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DealerID]" />
-                    <inputColumn
-                      refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].Columns[LastUpdatedUTCDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="LastUpdatedUTCDate"
-                      externalMetadataColumnId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
-                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LastUpdatedUTCDate]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].Columns[UserID]"
                       cachedDataType="i4"
@@ -1074,7 +1079,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       cachedLength="1"
                       cachedName="RecordStatusCode"
                       externalMetadataColumnId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@RecordStatusCode]"
-                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[RecordStatusCode]" />
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[RecordStatusCode]"
+                      name="RecordStatusCode" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].Columns[DMSSalesRepID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DMSSalesRepID"
+                      externalMetadataColumnId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@DMSSalesRepID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DMSSalesRepID]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].Columns[EmailAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@EmailAddress]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].Columns[LastUpdatedUTCDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LastUpdatedUTCDate"
+                      externalMetadataColumnId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LastUpdatedUTCDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1087,17 +1115,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           dataType="System.Int32"
                           description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
                           name="DBParamInfoFlags">81</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
-                      dataType="dbTimeStamp"
-                      name="@LastUpdatedUTCDate">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                          name="DBParamInfoFlags">65</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
@@ -1290,6 +1307,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="DBParamInfoFlags">65</property>
                       </properties>
                     </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@DMSSalesRepID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@DMSSalesRepID">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="@EmailAddress">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute UserAccess SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
+                      dataType="dbTimeStamp"
+                      name="@LastUpdatedUTCDate">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1327,12 +1381,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </component>
             <component
               refId="Package\Import CSV File\Read CSV File"
-              componentClassID="DTSAdapter.FlatFileSource.3"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1033"
               name="Read CSV File"
               usesDispositions="true"
+              validateExternalMetadata="True"
               version="1">
               <properties>
                 <property
@@ -1730,6 +1785,50 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DMSSalesRepID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DMSSalesRepID]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DMSSalesRepID]"
+                      name="DMSSalesRepID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EmailAddress]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1739,7 +1838,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       name="DealerID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LastUpdatedUTCDate]"
-                      dataType="dbTimeStamp"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="LastUpdatedUTCDate" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[UserID]"
@@ -1761,7 +1862,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EmailAddress]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="300"
                       name="EmailAddress" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[InventoryAccessLevelID]"
@@ -1825,6 +1926,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       dataType="str"
                       length="1"
                       name="RecordStatusCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DMSSalesRepID]"
+                      dataType="dbTimeStamp"
+                      name="DMSSalesRepID" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1875,7 +1980,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set Hidden File Attribute"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -1885,14 +1990,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Language="CSharp"
           ReadOnlyVariables="User::ZipFileToProcess">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_5a832db1905d40669c368e3c5d89c1b2")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_5a832db1905d40669c368e3c5d89c1b2")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2248,35 +2374,14 @@ namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_5a832db1905d40669c368e3c5d89c1b2")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_5a832db1905d40669c368e3c5d89c1b2")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="ST_e0f8f633a3bb4fd998237f6bfbeb07f3.csproj"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{c36ac0ab-aec6-452a-9835-7c75c141b46a}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>ST_5a832db1905d40669c368e3c5d89c1b2</RootNamespace><AssemblyName>ST_e0f8f633a3bb4fd998237f6bfbeb07f3</AssemblyName><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST110</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>

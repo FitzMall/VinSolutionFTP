@@ -1,0 +1,8 @@
+DatabaseTables
+communicationdetailemail
+communicationdetailphone
+communicationdetailtext
+leadstatuscustom
+leadtradeinvehicle
+task
+useraccess

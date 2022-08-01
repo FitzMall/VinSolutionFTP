@@ -8,14 +8,14 @@
   DTS:DisableEventHandlers="True"
   DTS:DTSID="{010A70F3-E3A4-4166-A6FE-E44B2F968AC6}"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="11.0.7001.0"
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="CRMSoldTransactions"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="34"
-  DTS:VersionGUID="{26A9F80C-E8D3-48EB-87C1-56A87D0BB4A3}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{5D0D63F3-5879-4662-BE52-D53A9AD77660}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -42,7 +42,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerID"
-              DTS:DTSID="{9762C6A2-AE86-4D63-A4EB-B0AD7BCB8E84}"
+              DTS:DTSID="{B65E0605-A92D-4097-A586-AE2DEA55D185}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadID"
-              DTS:DTSID="{AEBBA03D-6A3A-4A8D-BD52-B2F3FC84A47B}"
+              DTS:DTSID="{A39BAA9C-BDD5-4675-9ED8-15370B908051}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +58,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{6261637B-C50F-42BC-9122-175A7ADA300E}"
+              DTS:DTSID="{799BFEEF-BE40-4C43-93B3-B42EA2396CB0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +67,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DealNumber"
-              DTS:DTSID="{92B51DBB-10EB-460D-8039-675F60DDD737}"
+              DTS:DTSID="{59970FFE-D75F-491F-AD7D-799130FCB51B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="SalesRepUserID"
-              DTS:DTSID="{1A59CC21-D476-4490-A979-E0D5072F3AF6}"
+              DTS:DTSID="{EEC4FDC6-A791-404F-B7FA-651BFC9D8CA8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="SplitSaleWithUserID"
-              DTS:DTSID="{2F54A330-4085-4B95-903A-794E220F37A2}"
+              DTS:DTSID="{9DDC877F-E9AE-4279-9BB3-852EBD698796}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,16 +92,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="InventoryType"
-              DTS:DTSID="{A2E7D825-605C-46DC-9A8E-193986F96219}"
+              DTS:DTSID="{B3AF4A27-9E78-4567-B2AC-E434114EB9B0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="20"
+              DTS:MaximumWidth="12"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StockNumber"
-              DTS:DTSID="{1959B646-9BE2-44DB-9CCC-F794CBC52073}"
+              DTS:DTSID="{EB78CD5E-C0B2-42CB-85C4-10F114FE7FFF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -110,7 +110,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="VIN"
-              DTS:DTSID="{94CFDA90-47D0-4C08-B7AE-61E8092B400D}"
+              DTS:DTSID="{D426D8B9-62BC-48C0-B28E-08216C711C47}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -118,7 +118,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Year"
-              DTS:DTSID="{1AAC891B-C853-4098-AA01-E7ED3A02FD3C}"
+              DTS:DTSID="{B43009DD-AA03-41E0-9DDB-7375B254FF5D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -127,7 +127,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Make"
-              DTS:DTSID="{BADC78EA-5F6F-40B1-89FF-FC7708FF98EA}"
+              DTS:DTSID="{C1CC8B2D-C325-4480-A360-39543752FB39}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -136,7 +136,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Model"
-              DTS:DTSID="{FE7AFF41-8CCE-4B0F-B181-C97C1298FD28}"
+              DTS:DTSID="{E61DF2B4-FC56-448F-A935-D85B649DEA4F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -146,7 +146,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="SalePrice"
-              DTS:DTSID="{F2BC27DB-D758-4DD8-B77A-340A5D1FAF5A}"
+              DTS:DTSID="{C938DE27-C686-452D-A394-58E7738380C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="FrontGross"
-              DTS:DTSID="{B399F62E-4370-4257-A201-E2FAA9EF39AC}"
+              DTS:DTSID="{1BB397F5-645E-4336-87E4-0756FC0BE0E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +166,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="BackGross"
-              DTS:DTSID="{D32FE060-1479-48F8-96E2-EE6F004DC9C3}"
+              DTS:DTSID="{8B606CF7-D354-41C4-8A8A-ECFA6FEE2C5F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +176,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="TotalGross"
-              DTS:DTSID="{494B0C82-3952-4D55-A70A-2C25D43DBE8F}"
+              DTS:DTSID="{6932E4F6-8B70-4A3E-B935-C9C6C9F605A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -185,7 +185,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PaymentMethod"
-              DTS:DTSID="{7067FA5F-C712-46E5-A77B-B1C1AD5D691C}"
+              DTS:DTSID="{E0F387D1-53CD-4A5C-ADD9-A52A499E2FCC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,7 +193,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadFinanceSourceID"
-              DTS:DTSID="{A32113F0-F030-4B6A-8F9D-A118882B9F00}"
+              DTS:DTSID="{92529279-E5C3-4890-AE35-859B439808DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -203,7 +203,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="DownPayment"
-              DTS:DTSID="{717C3671-9884-4AC3-820E-E971C82983D8}"
+              DTS:DTSID="{5146DA9B-9B46-47B4-A41F-9F49F704D9E5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -213,7 +213,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="MonthlyPayment"
-              DTS:DTSID="{93DC1948-92C2-4187-AB06-DEC4CEFB0EBE}"
+              DTS:DTSID="{A37CDDC8-DCFD-41FB-826D-2EBB4080B5C4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -222,7 +222,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PaymentTermMonths"
-              DTS:DTSID="{EB341A48-877C-49F0-A106-2F8C5679569D}"
+              DTS:DTSID="{F55B9992-4F44-4CC4-BC83-FB4CC948BE03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,7 +230,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="FinanceMgrUserID"
-              DTS:DTSID="{28A38EB7-1F6F-4725-AEF6-428C53DA3B75}"
+              DTS:DTSID="{3BF17FDE-D2D7-4A59-B50E-0DDEB010B41B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -239,7 +239,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FinanceCompanyName"
-              DTS:DTSID="{806A5970-57A6-480F-991C-F9D9F5B5569F}"
+              DTS:DTSID="{74F2E0E6-D4C8-46BF-B721-7780BB3F4C18}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -249,7 +249,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="GAP"
-              DTS:DTSID="{C2F72C5F-141B-4DD0-857C-3967B8CDB22B}"
+              DTS:DTSID="{FB4E2959-DC9C-490A-BD68-9DCAAC2A4887}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -259,7 +259,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="CreditLife"
-              DTS:DTSID="{978EB94B-4EAF-462F-B35C-547932E4B9B1}"
+              DTS:DTSID="{097B29B5-A124-48D3-8624-0241AE59DC1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -269,7 +269,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="CreditDisability"
-              DTS:DTSID="{C2440B76-B886-465E-85CB-7753EBBE34F0}"
+              DTS:DTSID="{6B4109FE-77BC-4917-ABA0-7D312B0EC248}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -279,7 +279,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="ExtendedWarranty"
-              DTS:DTSID="{FB132C2D-76F0-4021-A92C-B1A85D5D0DCA}"
+              DTS:DTSID="{F4E3B36A-E035-4EA9-BA86-53277965746A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -289,7 +289,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="CarCare"
-              DTS:DTSID="{F4C40855-700C-4D2D-814F-16FCA1B0AE63}"
+              DTS:DTSID="{8331CB7D-F8AC-4737-A8AA-C1562A61DAA3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -299,7 +299,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="RoadHazard"
-              DTS:DTSID="{9943A43F-4634-466D-8298-2D176CFB3012}"
+              DTS:DTSID="{68423206-D341-4E0A-A505-20288BDA1970}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -309,7 +309,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="FinanceReserve"
-              DTS:DTSID="{8C395632-D51D-4694-97EB-2943327EC50C}"
+              DTS:DTSID="{3E7EFC2D-8381-46C0-98E4-4F9AEAE273D9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -319,7 +319,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="FinanceIncome"
-              DTS:DTSID="{FEA9F6E4-9EB8-488C-9D57-1E3B214BC29E}"
+              DTS:DTSID="{E1359296-D740-417E-9210-F32F83A80381}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -329,7 +329,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="ASIncome"
-              DTS:DTSID="{8B257DA7-B505-40CF-8835-2A7A89FDD4ED}"
+              DTS:DTSID="{DCA13BEE-4E4B-4520-9AD7-50A91310D230}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +338,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CRMDMSMatchInd"
-              DTS:DTSID="{B42B0260-E31F-44BA-9C0C-1AB5276B1E09}"
+              DTS:DTSID="{8349A645-3920-424D-BB02-DDF24361B6A1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -347,7 +347,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="RecordStatusCode"
-              DTS:DTSID="{88027B32-2332-402A-96E2-0E969FA2486E}"
+              DTS:DTSID="{BC79017A-B8ED-4BCF-B099-2A08027B7AB4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -356,7 +356,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OwnershipCode"
-              DTS:DTSID="{828F5FBA-26FC-4587-B118-6B411F77ABE9}"
+              DTS:DTSID="{49A9EAB1-DB09-4882-9895-B87FD3980ACF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -364,7 +364,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="SoldUTCDate"
-              DTS:DTSID="{37B3504F-7A62-4E6A-AC34-5AA82766BD9E}"
+              DTS:DTSID="{B26D6651-0D84-4DEB-896F-6028D2A6C834}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -372,7 +372,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CreatedByUserID"
-              DTS:DTSID="{F69ED27A-2DD0-42A8-B995-CE599D091DCF}"
+              DTS:DTSID="{DA75D89F-3CBA-4EB1-915E-146ACDB9D8BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -380,16 +380,15 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="CreatedUTCDate"
-              DTS:DTSID="{2AC40B9B-379B-4E0D-9ADA-4FC7A55AB2BE}"
+              DTS:DTSID="{06BC575F-2D3A-4CDB-A509-A1EB280EB4BA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LastUpdatedByUserID"
-              DTS:DTSID="{267EC93F-37C6-463E-A17C-DD3884ED17D7}"
+              DTS:DTSID="{183E1F8B-A253-4E1E-B46B-1F56F02179FB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -397,23 +396,15 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{3DF1CF51-19DC-4A68-961E-B7D641580216}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="LeadSourceID"
-              DTS:DTSID="{3C8A5319-BC11-460D-97AB-8D38C53BC1D0}"
+              DTS:DTSID="{13B83894-87F7-45FA-9E1A-E7F5CE190944}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="CRMSaleID"
-              DTS:DTSID="{7D0514ED-3B9C-4318-A8B9-1EB5F0191B8C}"
+              DTS:ObjectName="LeadSourceID"
+              DTS:DTSID="{7F8F0521-8E54-4AD2-A2D6-4E12A919233E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1138,11 +1129,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <components>
             <component
               refId="Package\Import CSV File\Execute CRMSoldTransaction SP"
-              componentClassID="DTSTransform.OLEDBCommand.3"
+              componentClassID="{93FFEC66-CBC8-4C7F-9C6A-CB1C17A7567D}"
               contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
               name="Execute CRMSoldTransaction SP"
               usesDispositions="true"
+              validateExternalMetadata="True"
               version="2">
               <properties>
                 <property
@@ -1154,7 +1146,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_CRMSoldTransaction ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_CRMSoldTransaction ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1163,8 +1155,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Execute CRMSoldTransaction SP.Connections[OleDbConnection]"
-                  connectionManagerID="{6CBBD2D9-84F6-4BC9-AC93-6919CEFC3A46}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.jjstest.users]"
+                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1196,9 +1188,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadID]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute CRMSoldTransaction SP.Inputs[OLE DB Command Input].Columns[LastUpdatedByUserID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="i4"
                       cachedName="LastUpdatedByUserID"
                       externalMetadataColumnId="Package\Import CSV File\Execute CRMSoldTransaction SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedByUserID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LastUpdatedByUserID]" />
@@ -1246,7 +1236,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CRMSoldTransaction SP.Inputs[OLE DB Command Input].Columns[StockNumber]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="12"
                       cachedName="StockNumber"
                       externalMetadataColumnId="Package\Import CSV File\Execute CRMSoldTransaction SP.Inputs[OLE DB Command Input].ExternalColumns[@StockNumber]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[StockNumber]" />
@@ -1478,12 +1468,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       cachedScale="2"
                       externalMetadataColumnId="Package\Import CSV File\Execute CRMSoldTransaction SP.Inputs[OLE DB Command Input].ExternalColumns[@FinanceReserve]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[FinanceReserve]" />
-                    <inputColumn
-                      refId="Package\Import CSV File\Execute CRMSoldTransaction SP.Inputs[OLE DB Command Input].Columns[CRMSaleID]"
-                      cachedDataType="i4"
-                      cachedName="CRMSaleID"
-                      externalMetadataColumnId="Package\Import CSV File\Execute CRMSoldTransaction SP.Inputs[OLE DB Command Input].ExternalColumns[@CRMSaleID]"
-                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CRMSaleID]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1992,17 +1976,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="DBParamInfoFlags">65</property>
                       </properties>
                     </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\Import CSV File\Execute CRMSoldTransaction SP.Inputs[OLE DB Command Input].ExternalColumns[@CRMSaleID]"
-                      dataType="i4"
-                      name="@CRMSaleID">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                          name="DBParamInfoFlags">81</property>
-                      </properties>
-                    </externalMetadataColumn>
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2040,12 +2013,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </component>
             <component
               refId="Package\Import CSV File\Read CSV File"
-              componentClassID="DTSAdapter.FlatFileSource.3"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1033"
               name="Read CSV File"
               usesDispositions="true"
+              validateExternalMetadata="True"
               version="1">
               <properties>
                 <property
@@ -2131,12 +2105,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LastUpdatedByUserID]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LastUpdatedByUserID]"
-                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LastUpdatedByUserID]"
                       name="LastUpdatedByUserID"
                       truncationRowDisposition="FailComponent">
@@ -2282,7 +2254,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[StockNumber]"
-                      length="20"
+                      length="12"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[StockNumber]"
                       name="StockNumber"
                       truncationRowDisposition="FailComponent">
@@ -2945,26 +2917,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CRMSaleID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CRMSaleID]"
-                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CRMSaleID]"
-                      name="CRMSaleID"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2982,9 +2934,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       name="LeadID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LastUpdatedByUserID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i4"
                       name="LastUpdatedByUserID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LastUpdatedUTCDate]"
@@ -3018,7 +2968,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[StockNumber]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="12"
                       name="StockNumber" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[VIN]"
@@ -3188,10 +3138,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CreatedUTCDate]"
                       dataType="dbTimeStamp"
                       name="CreatedUTCDate" />
-                    <externalMetadataColumn
-                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CRMSaleID]"
-                      dataType="i4"
-                      name="CRMSaleID" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3857,7 +3803,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="35.6753190104167,5,30.4826953125,9.7490234375"
+              BoundingBox="35.6753190104165,5,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

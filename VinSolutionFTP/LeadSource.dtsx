@@ -7,14 +7,14 @@
   DTS:CreatorName="FITZMALL\striplingj"
   DTS:DTSID="{3755F6DD-DC66-4FB7-BF96-3C34DD398938}"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="11.0.7001.0"
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="10"
   DTS:ObjectName="LeadSource"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
   DTS:VersionBuild="40"
-  DTS:VersionGUID="{0E7CFF09-034C-488E-9348-F57620A1BA04}">
+  DTS:VersionGUID="{FA71767B-5381-4127-93FD-EE2A8732E039}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -797,11 +797,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <components>
             <component
               refId="Package\Import CSV File\Execute LeadSource SP"
-              componentClassID="DTSTransform.OLEDBCommand.3"
+              componentClassID="{93FFEC66-CBC8-4C7F-9C6A-CB1C17A7567D}"
               contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
               name="Execute LeadSource SP"
               usesDispositions="true"
+              validateExternalMetadata="True"
               version="2">
               <properties>
                 <property
@@ -822,8 +823,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Execute LeadSource SP.Connections[OleDbConnection]"
-                  connectionManagerID="{6CBBD2D9-84F6-4BC9-AC93-6919CEFC3A46}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.jjstest.users]"
+                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -968,12 +969,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </component>
             <component
               refId="Package\Import CSV File\Read CSV File"
-              componentClassID="DTSAdapter.FlatFileSource.3"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1033"
               name="Read CSV File"
               usesDispositions="true"
+              validateExternalMetadata="True"
               version="1">
               <properties>
                 <property
@@ -1832,12 +1834,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Import CSV File\Read CSV File"
           TopLeft="56,47" />
         <NodeLayout
-          Size="189,42"
+          Size="194,42"
           Id="Package\Import CSV File\Execute LeadSource SP"
           TopLeft="56,188" />
         <EdgeLayout
           Id="Package\Import CSV File.Paths[Flat File Source Output]"
-          TopLeft="151.75,89">
+          TopLeft="153,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

@@ -7,14 +7,14 @@
   DTS:CreatorName="FITZMALL\striplingj"
   DTS:DTSID="{E20848DD-42B9-4F54-AA3E-817E5F72399D}"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="11.0.7001.0"
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="10"
   DTS:ObjectName="LeadStatus"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{0214DA54-166C-488A-AAEE-20EC023B056A}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{B410F140-D39A-475E-B2A3-9B6D681B632A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -796,12 +796,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           version="1">
           <components>
             <component
-              refId="Package\Import CSV File\Execute LeadStatus SP"
-              componentClassID="DTSTransform.OLEDBCommand.3"
+              refId="Package\Import CSV File\Execute Appointment SP"
+              componentClassID="{93FFEC66-CBC8-4C7F-9C6A-CB1C17A7567D}"
               contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
-              name="Execute LeadStatus SP"
+              name="Execute Appointment SP"
               usesDispositions="true"
+              validateExternalMetadata="True"
               version="2">
               <properties>
                 <property
@@ -821,59 +822,59 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Import CSV File\Execute LeadStatus SP.Connections[OleDbConnection]"
-                  connectionManagerID="{6CBBD2D9-84F6-4BC9-AC93-6919CEFC3A46}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.jjstest.users]"
+                  refId="Package\Import CSV File\Execute Appointment SP.Connections[OleDbConnection]"
+                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input]"
+                  refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input]"
                   errorOrTruncationOperation="Command Execution"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Command Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].Columns[LastUpdatedUTCDate]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].Columns[LastUpdatedUTCDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="LastUpdatedUTCDate"
-                      externalMetadataColumnId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LastUpdatedUTCDate]" />
                     <inputColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].Columns[LeadStatusID]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].Columns[LeadStatusID]"
                       cachedDataType="i8"
                       cachedName="LeadStatusID"
-                      externalMetadataColumnId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusID]"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadStatusID]" />
                     <inputColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].Columns[LeadStatusName]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].Columns[LeadStatusName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="LeadStatusName"
-                      externalMetadataColumnId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusName]"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusName]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadStatusName]" />
                     <inputColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].Columns[LeadStatusTypeID]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].Columns[LeadStatusTypeID]"
                       cachedDataType="i8"
                       cachedName="LeadStatusTypeID"
-                      externalMetadataColumnId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusTypeID]"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusTypeID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadStatusTypeID]" />
                     <inputColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].Columns[LeadStatusTypeName]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].Columns[LeadStatusTypeName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="LeadStatusTypeName"
-                      externalMetadataColumnId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusTypeName]"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusTypeName]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadStatusTypeName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
                       dataType="dbTimeStamp"
                       name="@LastUpdatedUTCDate">
                       <properties>
@@ -884,7 +885,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusID]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusID]"
                       dataType="i4"
                       name="@LeadStatusID">
                       <properties>
@@ -895,7 +896,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusName]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusName]"
                       codePage="1252"
                       dataType="str"
                       length="100"
@@ -908,7 +909,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusTypeID]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusTypeID]"
                       dataType="i4"
                       name="@LeadStatusTypeID">
                       <properties>
@@ -919,7 +920,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusTypeName]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadStatusTypeName]"
                       codePage="1252"
                       dataType="str"
                       length="100"
@@ -936,29 +937,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Import CSV File\Execute LeadStatus SP.Outputs[OLE DB Command Output]"
+                  refId="Package\Import CSV File\Execute Appointment SP.Outputs[OLE DB Command Output]"
                   exclusionGroup="1"
                   name="OLE DB Command Output"
-                  synchronousInputId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input]">
+                  synchronousInputId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Import CSV File\Execute LeadStatus SP.Outputs[OLE DB Command Error Output]"
+                  refId="Package\Import CSV File\Execute Appointment SP.Outputs[OLE DB Command Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Command Error Output"
-                  synchronousInputId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input]">
+                  synchronousInputId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Import CSV File\Execute LeadStatus SP.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Import CSV File\Execute Appointment SP.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Import CSV File\Execute LeadStatus SP.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      refId="Package\Import CSV File\Execute Appointment SP.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Import CSV File\Execute LeadStatus SP.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Import CSV File\Execute Appointment SP.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -968,12 +969,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </component>
             <component
               refId="Package\Import CSV File\Read CSV File"
-              componentClassID="DTSAdapter.FlatFileSource.3"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1033"
               name="Read CSV File"
               usesDispositions="true"
+              validateExternalMetadata="True"
               version="1">
               <properties>
                 <property
@@ -1163,7 +1165,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <paths>
             <path
               refId="Package\Import CSV File.Paths[Flat File Source Output]"
-              endId="Package\Import CSV File\Execute LeadStatus SP.Inputs[OLE DB Command Input]"
+              endId="Package\Import CSV File\Execute Appointment SP.Inputs[OLE DB Command Input]"
               name="Flat File Source Output"
               startId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output]" />
           </paths>
@@ -1832,12 +1834,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Import CSV File\Read CSV File"
           TopLeft="56,47" />
         <NodeLayout
-          Size="186,42"
-          Id="Package\Import CSV File\Execute LeadStatus SP"
+          Size="194,42"
+          Id="Package\Import CSV File\Execute Appointment SP"
           TopLeft="56,188" />
         <EdgeLayout
           Id="Package\Import CSV File.Paths[Flat File Source Output]"
-          TopLeft="151,89">
+          TopLeft="153,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
