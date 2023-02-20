@@ -13,16 +13,37 @@
   DTS:ObjectName="communicationdetailphone"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="55"
-  DTS:VersionGUID="{049306ED-A69B-4365-8312-017BC18259EC}">
+  DTS:VersionBuild="70"
+  DTS:VersionGUID="{EE43FFCA-894F-460A-BDBB-1C387E8428E5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CommunicationDetailPhoneConn]"
+      DTS:refId="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{162D3D8C-A4FA-4C64-8A5C-40BABBE83281}"
+      DTS:ObjectName="10.254.162.196.REYDATA.users">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.254.162.196;User ID=users;Initial Catalog=REYDATA;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="gxucT7UvIw=="
+            IV="E/SBPi4pD9k=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>E/SBPi4pD9nf2zcHnNrueF/K8xfrwClL059KXTkz9cZgpm9wH/oCKWZPFw3iaFI/DFx23rp+UoPUCu5EHuB64zRuqNGjBfXMycJsO0h/dbZ3Lw4Lhi+jCxYJeY0KLAz/fQxItEtYizBSN4kPtFdDSMLPejJefdT1YwviHACcaSw=</CipherValue>
+            </CipherData>
+          </EncryptedData>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CommPhoneFlatFile]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{4D879279-934C-413E-94A8-F148A9046A71}"
-      DTS:ObjectName="CommunicationDetailPhoneConn">
+      DTS:DTSID="{BC377801-4B21-4218-AF6E-E69AA34220D7}"
+      DTS:ObjectName="CommPhoneFlatFile">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::CSVFile]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -41,15 +62,16 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerID"
-              DTS:DTSID="{E09CD960-DBCE-4345-A25B-037FF6992BB4}"
+              DTS:DTSID="{0F8E2C32-F279-4DA2-973E-940D9446246D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="AutoLeadMessageID"
-              DTS:DTSID="{26358083-5605-4F40-A3CE-7B919E885076}"
+              DTS:DTSID="{E0C2B686-8439-44DE-BD79-B591A79D1C9B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +79,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadID"
-              DTS:DTSID="{82BFF756-80BF-4A5C-B9B1-7139F8D2A43A}"
+              DTS:DTSID="{727D8217-8D06-4D86-B359-4F7732B700D5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,7 +87,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CreatedByUserID"
-              DTS:DTSID="{7C23514C-59E0-4A1D-9F1C-48886EB16504}"
+              DTS:DTSID="{0A7E4A3C-6D66-4661-BBE3-B4F7DD9B88E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -73,7 +95,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{75D59529-71B1-4E0D-9CA2-7C7359A88E69}"
+              DTS:DTSID="{875F617C-C342-43A2-A98D-B234FBFDF467}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -82,7 +104,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="NoteType"
-              DTS:DTSID="{E68421EC-4F66-4822-8D95-F58B1823C6EC}"
+              DTS:DTSID="{8B9BAE1B-EEA7-4F17-BB38-54C695AAD8E5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -90,16 +112,16 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CommunicationTypeCode"
-              DTS:DTSID="{2ECDCDF8-B214-49D3-B8FA-3485369CFFE1}"
+              DTS:DTSID="{B8E23B97-9973-4433-96C6-4727DB709732}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="300"
+              DTS:MaximumWidth="20"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerPhone"
-              DTS:DTSID="{697C9ACD-6E9D-4A80-ACAE-3294D94137A6}"
+              DTS:DTSID="{B5B5AFA9-C55E-416B-A2A8-10E83D7836F0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -107,7 +129,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsContacted"
-              DTS:DTSID="{F375EE34-0493-4876-9C86-4F69DFBBE21C}"
+              DTS:DTSID="{21AF2D71-55D3-40CB-BD92-33A0270774BD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -115,7 +137,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsMachineAnswered"
-              DTS:DTSID="{246E7D93-3488-41E3-B7D3-15FF24046D3A}"
+              DTS:DTSID="{51B67535-43AA-4A62-ADEF-BFA63524C89C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +145,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsNotContacted"
-              DTS:DTSID="{D2668DD9-D0BE-47A7-9B46-1DFB5A74263D}"
+              DTS:DTSID="{CB9891AC-6B50-4F5E-9285-EC174A8A80D1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,176 +153,32 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsUnknownResult"
-              DTS:DTSID="{FFC2D114-5C3F-4784-B56D-BC1277D3EACC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="MessageUTCDate"
-              DTS:DTSID="{29876B91-0919-488A-8F45-EA26F6D38A77}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{AE58B8D2-A5B2-4180-A3F2-D169E6D06D98}"
+              DTS:DTSID="{1E158492-FF94-4EED-AFBB-7474DB92682B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MessageUTCDate"
+              DTS:DTSID="{AB598BEC-776D-43FB-877A-2F9162576A73}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastUpdatedUTCDate"
+              DTS:DTSID="{63F8C11C-1C11-4CE0-A4BA-A97595C43A47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:MaximumWidth="300"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MessageContentFirst300"
-              DTS:DTSID="{5445D1DF-7F26-47B7-904C-97D08609A6A9}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{35371B0B-9680-45C2-9048-D281998917DF}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[User::CSVFile]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DealerID"
-              DTS:DTSID="{81F78E24-EF7D-4E99-885E-194035450A25}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="AutoLeadMessageID"
-              DTS:DTSID="{CDC565F0-9409-4D92-BAFA-6B43F18630C7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="LeadID"
-              DTS:DTSID="{269E244E-40C7-4686-98C6-58B387B6F9A7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CreatedByUserID"
-              DTS:DTSID="{9FBF0C51-3B2E-4D8A-B7FB-5F76E7CBD7AA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CustomerID"
-              DTS:DTSID="{4C0517D8-01F2-4470-8A7F-5C4D0BE19508}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="NoteType"
-              DTS:DTSID="{0CFEE970-FFC9-487F-B2AA-4393FA9DA1B4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CommunicationTypeCode"
-              DTS:DTSID="{85433475-5859-4424-95EE-E4A22DF23B11}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CustomerPhone"
-              DTS:DTSID="{CC573FFA-398A-4F24-95AE-723183C5110D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IsContacted"
-              DTS:DTSID="{D657D9A1-727E-4E50-AA5F-D617C229CB39}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IsMachineAnswered"
-              DTS:DTSID="{6EDA25BE-1681-49E9-9FD7-DFF22E3A4F2F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IsNotContacted"
-              DTS:DTSID="{0EDD9749-406C-482A-A520-B1431AB14AD7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="11"
-              DTS:TextQualified="True"
-              DTS:ObjectName="IsUnknownResult"
-              DTS:DTSID="{6E25A7DF-472F-44C9-8271-0D9E22A4CF3D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="MessageUTCDate"
-              DTS:DTSID="{C7E7DB82-A0B7-4692-B2B3-2421D4C7126C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{91705F5B-68D7-4A62-A773-9A4878E86C67}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="320"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="MessageContentFirst300"
-              DTS:DTSID="{FB2DC00C-7277-49F2-BF7A-C93A8B2D0601}"
+              DTS:DTSID="{FED93E83-C94B-492E-B396-E5F7947F3023}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -358,6 +236,15 @@
           Language="CSharp"
           ReadOnlyVariables="CSVFileName, OrigZipFileName, ProcessedZipfileName"
           ReadWriteVariables="User::CSVFile,User::OrigZipFile,User::ProcessedZipFile">
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -477,35 +364,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_e937cf18c7194891b96145fdb376a027.Properties.Settings.get_Default():ST_e937cf18c7194891b96145fdb376a027.Properties.Sett" +
-    "ings")]
-
-namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -737,6 +595,35 @@ namespace ST_e937cf18c7194891b96145fdb376a027
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_e937cf18c7194891b96145fdb376a027.Properties.Settings.get_Default():ST_e937cf18c7194891b96145fdb376a027.Properties.Sett" +
+    "ings")]
+
+namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -766,15 +653,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -973,7 +851,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Delete CSV File"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
@@ -1027,7 +905,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
               name="Execute CommunicationDetailPhone SP"
               usesDispositions="true"
-              validateExternalMetadata="True"
               version="2">
               <properties>
                 <property
@@ -1039,7 +916,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_CommunicationDetailPhone ?, ?, ?, ?, ?,?, ?, ?, ?, ?,?, ?, ?, ?, ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_communicationdetailphone ?, ?, ?, ?, ?,?, ?, ?, ?, ?,?, ?, ?, ?, ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1048,8 +925,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Connections[OleDbConnection]"
-                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
+                  connectionManagerID="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1095,7 +972,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Inputs[OLE DB Command Input].Columns[NoteType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="30"
+                      cachedLength="50"
                       cachedName="NoteType"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Inputs[OLE DB Command Input].ExternalColumns[@NoteType]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[NoteType]" />
@@ -1111,7 +988,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Inputs[OLE DB Command Input].Columns[CustomerPhone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="300"
+                      cachedLength="50"
                       cachedName="CustomerPhone"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerPhone]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerPhone]" />
@@ -1155,7 +1032,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Inputs[OLE DB Command Input].Columns[MessageContentFirst300]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="300"
+                      cachedLength="320"
                       cachedName="MessageContentFirst300"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Inputs[OLE DB Command Input].ExternalColumns[@MessageContentFirst300]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[MessageContentFirst300]" />
@@ -1175,7 +1052,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </externalMetadataColumn>
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Inputs[OLE DB Command Input].ExternalColumns[@AutoLeadMessageID]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="13"
                       name="@AutoLeadMessageID">
                       <properties>
                         <property
@@ -1324,7 +1203,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailPhone SP.Inputs[OLE DB Command Input].ExternalColumns[@MessageContentFirst300]"
                       codePage="1252"
                       dataType="str"
-                      length="300"
+                      length="500"
                       name="@MessageContentFirst300">
                       <properties>
                         <property
@@ -1376,7 +1255,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               localeId="1033"
               name="Read CSV File"
               usesDispositions="true"
-              validateExternalMetadata="True"
               version="1">
               <properties>
                 <property
@@ -1391,8 +1269,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Read CSV File.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[CommPhoneFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[CommPhoneFlatFile]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1507,7 +1385,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[NoteType]"
-                      length="30"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[NoteType]"
                       name="NoteType"
                       truncationRowDisposition="FailComponent">
@@ -1551,7 +1429,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerPhone]"
-                      length="300"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerPhone]"
                       name="CustomerPhone"
                       truncationRowDisposition="FailComponent">
@@ -1693,10 +1571,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[MessageContentFirst300]"
-                      length="300"
+                      length="320"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[MessageContentFirst300]"
                       name="MessageContentFirst300"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1717,7 +1595,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       name="DealerID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[AutoLeadMessageID]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="AutoLeadMessageID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LeadID]"
@@ -1735,7 +1615,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[NoteType]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="30"
                       name="NoteType" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CommunicationTypeCode]"
@@ -1745,7 +1625,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerPhone]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="20"
                       name="CustomerPhone" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[IsContacted]"
@@ -1775,7 +1655,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[MessageContentFirst300]"
                       codePage="1252"
                       dataType="str"
-                      length="320"
+                      length="300"
                       name="MessageContentFirst300" />
                   </externalMetadataColumns>
                 </output>
@@ -1827,7 +1707,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set Hidden File Attribute"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -1837,14 +1717,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Language="CSharp"
           ReadOnlyVariables="User::ZipFileToProcess">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_5a832db1905d40669c368e3c5d89c1b2")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_5a832db1905d40669c368e3c5d89c1b2")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2135,35 +2036,14 @@ namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_5a832db1905d40669c368e3c5d89c1b2")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_5a832db1905d40669c368e3c5d89c1b2")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -2505,18 +2385,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Import CSV File\Execute CommunicationDetailPhone SP"
           TopLeft="56,188" />
         <NodeLayout
-          Size="144,42"
+          Size="145,42"
           Id="Package\Import CSV File\Read CSV File"
           TopLeft="56,47" />
         <EdgeLayout
           Id="Package\Import CSV File.Paths[Flat File Source Output]"
-          TopLeft="128,89">
+          TopLeft="128.333333333333,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="59.5,99"
+              EndConnector="59.3333333333333,99"
               Start="0,0"
-              End="59.5,91.5">
+              End="59.3333333333333,91.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2527,13 +2407,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point2="0,49.5"
                     Point3="4,49.5" />
                   <mssgle:LineSegment
-                    End="55.5,49.5" />
+                    End="55.3333333333333,49.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="55.5,49.5"
-                    Point2="59.5,49.5"
-                    Point3="59.5,53.5" />
+                    Point1="55.3333333333333,49.5"
+                    Point2="59.3333333333333,49.5"
+                    Point3="59.3333333333333,53.5" />
                   <mssgle:LineSegment
-                    End="59.5,91.5" />
+                    End="59.3333333333333,91.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

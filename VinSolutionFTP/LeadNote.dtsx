@@ -13,16 +13,26 @@
   DTS:ObjectName="LeadNote"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="53"
-  DTS:VersionGUID="{4FF6DC18-6771-425E-90C1-E60EEF903329}">
+  DTS:VersionBuild="60"
+  DTS:VersionGUID="{A5006C43-4BF9-408F-9CC2-0EB8E2D2F0B8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{03A8F0C9-38AC-4544-8FE5-F4324C2FB2A4}"
+      DTS:ObjectName="10.254.162.196.REYDATA.users">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.254.162.196;Initial Catalog=VINSolutions_API;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LeadNoteConnFF]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{B3DAC616-60A5-4336-BF7C-3EE4A63737B9}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:ObjectName="LeadNoteConnFF">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::CSVFile]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -41,7 +51,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerID"
-              DTS:DTSID="{D4427310-4F31-4FBB-8BB9-5A39FE5B95F4}"
+              DTS:DTSID="{51784762-8AC4-42DA-9367-0FA9A7B4D393}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +59,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="AutoLeadMessageID"
-              DTS:DTSID="{A4BA4F2F-173C-401C-B827-15F2ADDFA79E}"
+              DTS:DTSID="{A7978EE0-32FA-42A2-99D3-F868C3143326}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +67,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadID"
-              DTS:DTSID="{E2C5FF2C-734A-48E9-B5E0-597CA1B03E42}"
+              DTS:DTSID="{CF78270B-D774-4ADD-A807-7AFE21C3A3D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,7 +75,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CreatedByUserID"
-              DTS:DTSID="{53627C8B-D7C2-44AD-AD3F-801F2CC2F29E}"
+              DTS:DTSID="{8B6A3564-C819-45DA-81FC-CC832CE008F9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -73,7 +83,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadNoteUTCDate"
-              DTS:DTSID="{6C493D04-3125-44B0-B9D4-2A7085B9073A}"
+              DTS:DTSID="{A49FC900-58DE-4848-A630-80FA31BB8C03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -82,7 +92,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="NoteType"
-              DTS:DTSID="{F2712DD1-5EA9-4276-963D-BD78587ED334}"
+              DTS:DTSID="{FF94480D-E739-4832-AED9-9C73FFF6517F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -91,7 +101,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadNoteSubType"
-              DTS:DTSID="{EE9B29CC-36AD-4979-89D8-CE4F237A12DD}"
+              DTS:DTSID="{C7152829-1E0D-4404-A080-93AAE02EF510}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -99,7 +109,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{170231A3-F76E-47F8-81D1-D9424843D4B3}"
+              DTS:DTSID="{0BB31182-4C2D-43C6-BBA0-83625D74E79A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -108,7 +118,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadNote"
-              DTS:DTSID="{71AF5846-9701-4875-BA93-DFB778B8BAD6}"
+              DTS:DTSID="{541C104E-8389-48EF-BA57-DEF1D5DCD261}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -167,35 +177,14 @@
           ReadOnlyVariables="CSVFileName, OrigZipFileName, ProcessedZipfileName"
           ReadWriteVariables="User::CSVFile,User::OrigZipFile,User::ProcessedZipFile">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_e937cf18c7194891b96145fdb376a027")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_e937cf18c7194891b96145fdb376a027")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -575,14 +564,35 @@ namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_e937cf18c7194891b96145fdb376a027")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_e937cf18c7194891b96145fdb376a027")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -781,7 +791,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Delete CSV File"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
@@ -836,7 +846,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
               name="Execute LeadNote SP"
               usesDispositions="true"
-              validateExternalMetadata="True"
               version="2">
               <properties>
                 <property
@@ -857,8 +866,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Execute LeadNote SP.Connections[OleDbConnection]"
-                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
+                  connectionManagerID="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1081,7 +1090,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               localeId="1033"
               name="Read CSV File"
               usesDispositions="true"
-              validateExternalMetadata="True"
               version="1">
               <properties>
                 <property
@@ -1096,8 +1104,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Read CSV File.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[LeadNoteConnFF]"
+                  connectionManagerRefId="Package.ConnectionManagers[LeadNoteConnFF]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1386,7 +1394,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set Hidden File Attribute"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -1395,6 +1403,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="User::ZipFileToProcess">
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_5a832db1905d40669c368e3c5d89c1b2")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_5a832db1905d40669c368e3c5d89c1b2")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1514,35 +1552,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Settings.get_Default():ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Sett" +
-    "ings")]
-
-namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -1685,35 +1694,34 @@ namespace ST_5a832db1905d40669c368e3c5d89c1b2
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_5a832db1905d40669c368e3c5d89c1b2")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_5a832db1905d40669c368e3c5d89c1b2")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Settings.get_Default():ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>

@@ -7,22 +7,43 @@
   DTS:CreatorName="FITZMALL\striplingj"
   DTS:DTSID="{4F871FB3-6723-4ABA-8717-35A20812612D}"
   DTS:ExecutableType="SSIS.Package.3"
-  DTS:LastModifiedProductVersion="16.0.694.0"
+  DTS:LastModifiedProductVersion="11.0.7001.0"
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="10"
   DTS:ObjectName="CommunicationDetailEmail"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="54"
-  DTS:VersionGUID="{857E4CD0-D2D5-40A1-AE88-47AB287D792D}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{09EE9501-EC5D-4303-8D91-B66060F909E0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3CD0A53F-F152-46F9-BA5D-B17D7C489387}"
+      DTS:ObjectName="10.254.162.196.REYDATA.users">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.254.162.196;User ID=users;Initial Catalog=REYDATA;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="Kq6xKbQ9mw=="
+            IV="6trqLDq8Cwg=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>6trqLDq8Cwjodfwv3CdHol4l6emc0GZCg8dKPNDUamVaO0sXIOH+oszXT9Lwzo4XD4654ZiyDeKjc5KHKWqrAuwYwiTpcNzV4zlKNFuGqTjn9yLPALbbEfMA+dO9gQ0sNk5Ub4kjYxppcn1oCz5G/GJh/FxlzUjVMMBAu9YMIkM=</CipherValue>
+            </CipherData>
+          </EncryptedData>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[EmailFlatFileConn]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{6ACE9DD7-1473-4622-A8C3-7CB1427495D2}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:DTSID="{1C19218A-C772-4C5F-90D4-D2077DEEB8BE}"
+      DTS:ObjectName="EmailFlatFileConn">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::CSVFile]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -38,86 +59,86 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerID"
-              DTS:DTSID="{5ADB6515-8315-4D02-8CFE-080AC66C21AA}"
+              DTS:DTSID="{8A67A741-37D5-438F-8F0E-9D21A94B2E7C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="AutoLeadMessageID"
-              DTS:DTSID="{D2B13F57-16DC-4697-ABEB-E06EFC518C39}"
+              DTS:DTSID="{D67EEF5E-52D3-4409-A5D0-8212A887EAB7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadID"
-              DTS:DTSID="{80EB6D20-EBD8-42FF-8725-7FD4B3BE3B18}"
+              DTS:DTSID="{8860B0B9-D743-4A6C-90F6-F876198D9A87}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="CreatedByUserID"
-              DTS:DTSID="{91D18611-D3E4-42F6-912F-CC1E8A731412}"
+              DTS:DTSID="{10C8FF43-9E51-45E9-BDEF-128695478799}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{99D80E22-CF2A-4D4F-A512-84FAC466C690}"
+              DTS:DTSID="{9F9A26D9-9E26-4107-AC87-2FC743702E7C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="30"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="NoteType"
-              DTS:DTSID="{D38DA970-A3DF-4027-95DD-8C3825C721FC}"
+              DTS:DTSID="{4D9B1741-7F71-46C2-9B5A-BFC5FFB81138}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="CommunicationTypeCode"
-              DTS:DTSID="{524EC32F-DCE8-44D9-BF5A-CE27899CCA18}"
+              DTS:DTSID="{F8B693B3-41F5-473D-885E-538E2C68B8C8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="300"
+              DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailSubject"
-              DTS:DTSID="{08EADAAD-6F38-4C17-9059-6B5700643A69}"
+              DTS:DTSID="{04874E43-30D1-4D2B-8E3D-D3B088012064}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="300"
+              DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="RecipientEmailAddress"
-              DTS:DTSID="{FBA05686-7CDE-48AB-95B6-E7535C094874}"
+              DTS:DTSID="{98665E3E-11CC-4872-8E52-696946652B9B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="300"
+              DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SenderEmailAddress"
-              DTS:DTSID="{1224E285-AC0C-47DE-A869-0B33A5BBBBAC}"
+              DTS:DTSID="{3EBE8262-B39E-40F8-9CDA-3261B4031C91}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -125,7 +146,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="MessageUTCDate"
-              DTS:DTSID="{E8C2FE82-335D-49D0-9777-3E0D80583CFF}"
+              DTS:DTSID="{748C43D6-65E2-483A-94FA-1404A48D7378}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -133,16 +154,16 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{4B08A2E6-E26B-437B-94E4-33C028DB4EB7}"
+              DTS:DTSID="{10F96AE9-36CA-481F-A8C8-48F507B8F987}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="300"
+              DTS:MaximumWidth="400"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MessageContentFirst300"
-              DTS:DTSID="{801DFF2A-2CC8-4B74-B320-6EDF8A6EDE8A}"
+              DTS:DTSID="{F0E4F302-9AC7-42B0-BFF9-64D398FB20BE}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -200,6 +221,36 @@
           Language="CSharp"
           ReadOnlyVariables="CSVFileName, OrigZipFileName, ProcessedZipfileName"
           ReadWriteVariables="User::CSVFile,User::OrigZipFile,User::ProcessedZipFile">
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_e937cf18c7194891b96145fdb376a027")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_e937cf18c7194891b96145fdb376a027")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -319,35 +370,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_e937cf18c7194891b96145fdb376a027.Properties.Settings.get_Default():ST_e937cf18c7194891b96145fdb376a027.Properties.Sett" +
-    "ings")]
-
-namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -579,35 +601,34 @@ namespace ST_e937cf18c7194891b96145fdb376a027
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_e937cf18c7194891b96145fdb376a027")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_e937cf18c7194891b96145fdb376a027")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_e937cf18c7194891b96145fdb376a027.Properties.Settings.get_Default():ST_e937cf18c7194891b96145fdb376a027.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -864,7 +885,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <components>
             <component
               refId="Package\Import CSV File\Execute CommunicationDetailEmail SP"
-              componentClassID="DTSTransform.OLEDBCommand.3"
+              componentClassID="{93FFEC66-CBC8-4C7F-9C6A-CB1C17A7567D}"
               contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
               name="Execute CommunicationDetailEmail SP"
@@ -880,7 +901,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_CommunicationDetailEmail ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_communicationdetailemail ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -889,8 +910,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Connections[OleDbConnection]"
-                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
+                  connectionManagerID="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -904,32 +925,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[DealerID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="DealerID"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@DealerID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DealerID]"
                       name="DealerID" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[AutoLeadMessageID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="AutoLeadMessageID"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@AutoLeadMessageID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[AutoLeadMessageID]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[LeadID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="LeadID"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadID]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[CreatedByUserID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="CreatedByUserID"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@CreatedByUserID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CreatedByUserID]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[CustomerID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="CustomerID"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerID]" />
@@ -943,9 +964,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[NoteType]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[CommunicationTypeCode]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="300"
+                      cachedDataType="i8"
                       cachedName="CommunicationTypeCode"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@CommunicationTypeCode]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CommunicationTypeCode]" />
@@ -953,7 +972,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[EmailSubject]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="300"
+                      cachedLength="400"
                       cachedName="EmailSubject"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@EmailSubject]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EmailSubject]" />
@@ -961,7 +980,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[RecipientEmailAddress]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="300"
+                      cachedLength="400"
                       cachedName="RecipientEmailAddress"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@RecipientEmailAddress]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[RecipientEmailAddress]" />
@@ -969,7 +988,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[SenderEmailAddress]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="300"
+                      cachedLength="400"
                       cachedName="SenderEmailAddress"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@SenderEmailAddress]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[SenderEmailAddress]" />
@@ -989,7 +1008,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].Columns[MessageContentFirst300]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="300"
+                      cachedLength="400"
                       cachedName="MessageContentFirst300"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@MessageContentFirst300]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[MessageContentFirst300]" />
@@ -1009,7 +1028,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </externalMetadataColumn>
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@AutoLeadMessageID]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="13"
                       name="@AutoLeadMessageID">
                       <properties>
                         <property
@@ -1139,8 +1160,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailEmail SP.Inputs[OLE DB Command Input].ExternalColumns[@MessageContentFirst300]"
                       codePage="1252"
-                      dataType="str"
-                      length="300"
+                      dataType="text"
                       name="@MessageContentFirst300">
                       <properties>
                         <property
@@ -1186,7 +1206,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </component>
             <component
               refId="Package\Import CSV File\Read CSV File"
-              componentClassID="DTSAdapter.FlatFileSource.3"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1033"
@@ -1206,8 +1226,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Read CSV File.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[EmailFlatFileConn]"
+                  connectionManagerRefId="Package.ConnectionManagers[EmailFlatFileConn]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1217,7 +1237,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DealerID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DealerID]"
@@ -1237,7 +1257,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[AutoLeadMessageID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[AutoLeadMessageID]"
@@ -1257,7 +1277,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LeadID]"
@@ -1277,7 +1297,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CreatedByUserID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CreatedByUserID]"
@@ -1297,7 +1317,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
@@ -1339,12 +1359,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CommunicationTypeCode]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CommunicationTypeCode]"
-                      length="300"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CommunicationTypeCode]"
                       name="CommunicationTypeCode"
                       truncationRowDisposition="FailComponent">
@@ -1366,7 +1384,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EmailSubject]"
-                      length="300"
+                      length="400"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EmailSubject]"
                       name="EmailSubject"
                       truncationRowDisposition="FailComponent">
@@ -1388,7 +1406,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[RecipientEmailAddress]"
-                      length="300"
+                      length="400"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[RecipientEmailAddress]"
                       name="RecipientEmailAddress"
                       truncationRowDisposition="FailComponent">
@@ -1410,7 +1428,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[SenderEmailAddress]"
-                      length="300"
+                      length="400"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[SenderEmailAddress]"
                       name="SenderEmailAddress"
                       truncationRowDisposition="FailComponent">
@@ -1472,10 +1490,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[MessageContentFirst300]"
-                      length="300"
+                      length="400"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[MessageContentFirst300]"
                       name="MessageContentFirst300"
-                      truncationRowDisposition="IgnoreFailure">
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1492,51 +1510,51 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DealerID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="DealerID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[AutoLeadMessageID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="AutoLeadMessageID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LeadID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="LeadID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CreatedByUserID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="CreatedByUserID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="CustomerID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[NoteType]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="30"
                       name="NoteType" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CommunicationTypeCode]"
-                      dataType="i4"
+                      dataType="i8"
                       name="CommunicationTypeCode" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EmailSubject]"
                       codePage="1252"
                       dataType="str"
-                      length="300"
+                      length="400"
                       name="EmailSubject" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[RecipientEmailAddress]"
                       codePage="1252"
                       dataType="str"
-                      length="300"
+                      length="400"
                       name="RecipientEmailAddress" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[SenderEmailAddress]"
                       codePage="1252"
                       dataType="str"
-                      length="300"
+                      length="400"
                       name="SenderEmailAddress" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[MessageUTCDate]"
@@ -1550,7 +1568,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[MessageContentFirst300]"
                       codePage="1252"
                       dataType="str"
-                      length="300"
+                      length="400"
                       name="MessageContentFirst300" />
                   </externalMetadataColumns>
                 </output>
@@ -1611,15 +1629,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="User::ZipFileToProcess">
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1739,6 +1748,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Settings.get_Default():ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Sett" +
+    "ings")]
+
+namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -1881,35 +1919,6 @@ namespace ST_5a832db1905d40669c368e3c5d89c1b2
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Settings.get_Default():ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Sett" +
-    "ings")]
-
-namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -1939,6 +1948,15 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -2252,7 +2270,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="144,42"
+          Size="145,42"
           Id="Package\Import CSV File\Read CSV File"
           TopLeft="56,47" />
         <NodeLayout
@@ -2261,13 +2279,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           TopLeft="56,188" />
         <EdgeLayout
           Id="Package\Import CSV File.Paths[Flat File Source Output]"
-          TopLeft="128,89">
+          TopLeft="128.333333333333,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="57.5,99"
+              EndConnector="57,99"
               Start="0,0"
-              End="57.5,91.5">
+              End="57,91.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2278,13 +2296,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point2="0,49.5"
                     Point3="4,49.5" />
                   <mssgle:LineSegment
-                    End="53.5,49.5" />
+                    End="53,49.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="53.5,49.5"
-                    Point2="57.5,49.5"
-                    Point3="57.5,53.5" />
+                    Point1="53,49.5"
+                    Point2="57,49.5"
+                    Point3="57,53.5" />
                   <mssgle:LineSegment
-                    End="57.5,91.5" />
+                    End="57,91.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

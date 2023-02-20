@@ -13,16 +13,17 @@
   DTS:ObjectName="Customer"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="47"
-  DTS:VersionGUID="{E36912B4-9F08-4E21-AABA-DD59564A2161}">
+  DTS:VersionBuild="59"
+  DTS:VersionGUID="{5F082C75-5347-4D26-97BB-9ABFF624DCC0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CustomerConn]"
+      DTS:refId="Package.ConnectionManagers[CustomerConnBigger]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{55684BA2-9B00-4636-B35A-391CE39489B1}"
-      DTS:ObjectName="CustomerConn">
+      DTS:Description="CustomerConnBigger"
+      DTS:DTSID="{4C4F6B8D-03A2-41BB-AFD3-47273F431F68}"
+      DTS:ObjectName="CustomerConnBigger">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::CSVFile]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -41,7 +42,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerID"
-              DTS:DTSID="{F29CDB88-4101-4DFF-9F5C-C8C2EDB282B9}"
+              DTS:DTSID="{3DE48AEE-33ED-4F28-A491-80D5EB495B7B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,16 +50,16 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{DA75007E-0339-4441-8574-4C949069585E}"
+              DTS:DTSID="{CFF9D883-C240-42CB-B8E1-11500E2424D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="20"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerType"
-              DTS:DTSID="{60BF430A-2358-4B1C-AB5D-279C9B9B8939}"
+              DTS:DTSID="{74F6D7A6-7F82-4C9E-B567-8BAA39AF5678}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,34 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerStatus"
-              DTS:DTSID="{704C5DE3-9740-4231-B3D4-17D6E29FE642}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CustomerFirstName"
-              DTS:DTSID="{DDAFDEE2-BC06-400A-844F-D04B16DD0829}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CustomerMiddleName"
-              DTS:DTSID="{949711F3-A819-4CCF-80DA-7388E9070B9C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CustomerLastName"
-              DTS:DTSID="{486E83FF-0A5B-4194-9423-6D7357956CA2}"
+              DTS:DTSID="{90731321-5E39-4DAC-8D68-D7B04B2FAC98}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,8 +76,35 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
+              DTS:ObjectName="CustomerFirstName"
+              DTS:DTSID="{07C61433-0FFA-46B8-8ABB-3A1B2198DC45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerMiddleName"
+              DTS:DTSID="{5518E8FE-A8A0-47C8-A197-744C2BD51B9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerLastName"
+              DTS:DTSID="{8792B7C8-35E0-461A-8456-7CDBFE5AB888}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
               DTS:ObjectName="CustomerAddress"
-              DTS:DTSID="{19D66115-096D-4A6A-9A7B-101BF1F2E58A}"
+              DTS:DTSID="{499DDBCC-7956-499F-B97E-0790C2ABB63E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,25 +113,25 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerCity"
-              DTS:DTSID="{F77A9E97-ED6F-465E-827C-C01EC6D3E7DE}"
+              DTS:DTSID="{AA9E09BE-DE0C-4865-BA4E-F2F6927310D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="2"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerState"
-              DTS:DTSID="{85CDC540-E3F4-45EA-B8D2-C7C300921C26}"
+              DTS:DTSID="{72BB9BAC-91FD-402F-B89A-35264E5E6FAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="100"
+              DTS:MaximumWidth="255"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CompanyName"
-              DTS:DTSID="{866B1D1D-BDC0-4B02-B379-16FB25E45A7E}"
+              DTS:DTSID="{ECD3BF39-E6DD-4263-9B41-8A5144639F99}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +139,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="SalesMgrUserID"
-              DTS:DTSID="{0321EA1B-4D46-4A8A-AF1A-243B325B4965}"
+              DTS:DTSID="{390C2E84-5D2C-40F6-BC7D-E5647ED532F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -146,7 +147,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="SalesRepUserID"
-              DTS:DTSID="{1BD342BC-DD79-4DA4-BE77-DCB7C7D4F84E}"
+              DTS:DTSID="{2458D6BA-7181-48DD-AA9C-DCDF63155FD9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -154,7 +155,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="SplitSalesRepUserID"
-              DTS:DTSID="{D51B822F-8F22-4235-98D4-D2CD65C22E74}"
+              DTS:DTSID="{82531753-B223-48DE-A9E6-EA09584919A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -162,7 +163,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="BDAgentUserID"
-              DTS:DTSID="{B6E043E6-060D-4737-A049-BD42F501AD2F}"
+              DTS:DTSID="{B2846A89-C06C-41A1-A13A-BDDE60DF34D6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -170,7 +171,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CSIAgentUserID"
-              DTS:DTSID="{6040824D-9DAC-46B4-921A-A00196DD2044}"
+              DTS:DTSID="{25750F17-5B01-4771-B083-40653469BE50}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -178,15 +179,15 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsSalesCustomer"
-              DTS:DTSID="{0378F42C-0C1C-46D2-AF3D-CC2F2E64EB0B}"
+              DTS:DTSID="{FF59C086-F673-4A90-AC05-76F0986CF56D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="11"
+              DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="IsServiceCustomer"
-              DTS:DTSID="{82DBC1D5-0795-4EDB-ABA2-9E80E3ABB8C2}"
+              DTS:DTSID="{2481A398-442A-43D0-AA58-D79DF5C9641F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -194,7 +195,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastInboundContactUTCDate"
-              DTS:DTSID="{C274290A-2D9D-4A23-9C46-D2802B3A328E}"
+              DTS:DTSID="{314153A0-FC84-40FF-82AD-7754FBF74D62}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +203,25 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastOutboundContactUTCDate"
-              DTS:DTSID="{D16EE0CE-746C-4A7E-BD7E-69AD659E79BF}"
+              DTS:DTSID="{6AD2DF33-A5C4-405F-BEC0-E1E491DF844A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PostalCode"
+              DTS:DTSID="{357D56EB-A224-445F-9B91-49A26194BDE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DayTimePhone"
+              DTS:DTSID="{486F0890-35D1-4D59-89BB-2EA504FF9545}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,80 +229,62 @@
               DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="PostalCode"
-              DTS:DTSID="{9682EECB-5D10-4B28-9698-E23A68A4D7FD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="20"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DayTimePhone"
-              DTS:DTSID="{0C70AA26-DDBC-422D-A829-A9CB0CCA97F4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="12"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
               DTS:ObjectName="DayTimePhoneExt"
-              DTS:DTSID="{ACD1034A-3318-4DD6-9054-73E1C2068F2A}"
+              DTS:DTSID="{42E083DE-F63C-4236-96F4-E1F989E9DE5C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="20"
+              DTS:MaximumWidth="30"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EveningPhone"
-              DTS:DTSID="{95FC80CA-A98A-4D95-8861-FFE636471F38}"
+              DTS:DTSID="{5FD7BC55-4CA1-41CC-B509-AF87AE7DD3C5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="12"
+              DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="EveningPhoneExt"
-              DTS:DTSID="{CDF2FDB3-0931-48F1-BCFE-AF564E36452D}"
+              DTS:DTSID="{26A65206-ACE8-4964-BE62-C907A95D524A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="20"
+              DTS:MaximumWidth="30"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CellPhone"
-              DTS:DTSID="{30108891-3DC5-4F89-A0C3-8213B44E0DBD}"
+              DTS:DTSID="{B43642CF-EC20-4429-87ED-5C30D72A861C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="20"
+              DTS:MaximumWidth="30"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fax"
-              DTS:DTSID="{2B2E56CF-C94B-49CB-A4F4-65C58D4EA477}"
+              DTS:DTSID="{D5CFC1A4-C014-4EC1-A69D-D10FBE88DFF6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="200"
+              DTS:MaximumWidth="150"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Email"
-              DTS:DTSID="{482C217F-EB87-454E-A6DD-EC881F2F5D1D}"
+              DTS:DTSID="{C4C8C438-674C-47CC-8924-D16497F73C4A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="200"
+              DTS:MaximumWidth="150"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="AlternateEmail"
-              DTS:DTSID="{14B4F89F-7EBC-44DC-AA48-0BD60A5323F2}"
+              DTS:DTSID="{4E168E07-C28E-4608-85A6-D57E6D6C5A83}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -291,7 +292,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="DoNotMail"
-              DTS:DTSID="{0632721C-8759-4A83-A563-DC0150286B50}"
+              DTS:DTSID="{8F4AB657-F017-45D0-BDE0-CA2E6A77C0ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -299,7 +300,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CanBeMailed"
-              DTS:DTSID="{C13797BF-5310-4048-BCEB-E71A47FDF715}"
+              DTS:DTSID="{6624B4FC-7CA4-4E90-A63D-504B32641ED9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +308,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="DoNotCall"
-              DTS:DTSID="{8A2767AA-0EA9-41FB-97D6-9972892B86B2}"
+              DTS:DTSID="{A629542D-393F-483E-B330-800E60EF9554}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -315,7 +316,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CanBeCalled"
-              DTS:DTSID="{BF6E1592-4938-4990-BB97-8CD582FF69B3}"
+              DTS:DTSID="{7B19C580-7FF2-4E9D-875B-53565CAA2A2B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -323,7 +324,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="DoNotEmail"
-              DTS:DTSID="{CB0CA536-B8EB-46C9-8F44-D76FCBDFBC6D}"
+              DTS:DTSID="{27F00BD4-428D-4576-B01C-B1C0AF4835A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -331,32 +332,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CanBeEmailed"
-              DTS:DTSID="{D6F443FF-6F26-4D8D-A3F4-1B838CABE627}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="EBRSource"
-              DTS:DTSID="{D24ECB48-2EB0-44AD-88FD-E8C38333C17A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="EBRDate"
-              DTS:DTSID="{EA97AD8A-5A46-4ACB-9B86-AA8E865F4544}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="EBRExpiration"
-              DTS:DTSID="{7600AD25-7C81-40DA-AFA3-BC65B16ED6AA}"
+              DTS:DTSID="{2462D935-7684-425B-B3A6-07D715C75B83}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -364,26 +340,52 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="ExpressConsent"
-              DTS:DTSID="{3B50320B-2EED-4FE6-A32B-FD684669C83A}"
+              DTS:ObjectName="EBRSource"
+              DTS:DTSID="{18A4277B-9EB7-4CC0-ACDD-9B051EC8CDF2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="100"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EBRDate"
+              DTS:DTSID="{E1DF594B-01C5-4642-9D2E-83C62A2500D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EBRExpiration"
+              DTS:DTSID="{C682E0DD-A636-4E3F-A893-0FD8B4A9713E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ExpressConsent"
+              DTS:DTSID="{9938791F-8BE2-41B4-B24A-9E01123EEE0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="250"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ExpressConsentSource"
-              DTS:DTSID="{A23B42B4-DF1F-4FB3-82DE-1793F7D44F43}"
+              DTS:DTSID="{8BEA5B51-724C-403C-8F40-F112F0C83B56}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="200"
+              DTS:MaximumWidth="150"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CompliancePreferredEmail"
-              DTS:DTSID="{B7046388-101C-459F-860D-A2CCAC5EC47C}"
+              DTS:DTSID="{E2B027AF-E237-4228-A50E-406E777D68CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -391,16 +393,15 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="ExpressConsentLastModifiedUTCDate"
-              DTS:DTSID="{40797344-CF06-4117-811E-A064ECE772A1}"
+              DTS:DTSID="{FDC7B8CC-E770-439C-99CC-3654F3D82DA0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ExpressConsentLastModifiedByUser"
-              DTS:DTSID="{187A78B0-0965-42AB-9A94-B76FC934817B}"
+              DTS:DTSID="{BE65F477-ABD4-4A33-A6C2-6A7B79B4C7B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -408,25 +409,25 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="CanText"
-              DTS:DTSID="{2E0AEC4C-0431-465C-B7BB-CC11CFC954D3}"
+              DTS:DTSID="{BFB385B5-9B2B-4C75-8B9F-1684BE9BA3E4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="1"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PreferredContactMethod"
-              DTS:DTSID="{279C50F6-89AF-4E5C-9BA9-2701A086E435}"
+              DTS:DTSID="{8EA77B12-837F-47F7-8838-99E81B6B437F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="1"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PreferredContactTime"
-              DTS:DTSID="{30F233A1-82DD-4FB9-B4AC-355EF8220757}"
+              DTS:DTSID="{17AC77BE-ECAB-46E4-8F25-BA298BA3BE89}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -434,7 +435,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="CreatedUTCDate"
-              DTS:DTSID="{D374A3AC-96B6-47AE-9C91-25C0EA5631D4}"
+              DTS:DTSID="{F82E7382-36B4-44B1-8CCB-ACED2BABA7EB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -442,7 +443,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{C25AF913-AA1C-4C8B-9253-99246510A885}"
+              DTS:DTSID="{2C659504-38C6-406E-BB61-2F0EB2C569C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -450,7 +451,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastEmailReadUTCDate"
-              DTS:DTSID="{DB34BD74-674A-4DC2-AAAE-736B7E9139CE}"
+              DTS:DTSID="{990B2613-B49F-4702-AD03-CBA0ADADE3ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -458,7 +459,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastEmailClickUTCDate"
-              DTS:DTSID="{A05FD92C-2A5C-4B12-96F1-C326CEA41279}"
+              DTS:DTSID="{8FCAD304-C5CB-4399-A26A-9DDAAF0167FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -467,16 +468,150 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CommonConsumerId"
-              DTS:DTSID="{3385D558-7894-4962-A270-418AD24BAE15}"
+              DTS:DTSID="{1120095D-F41A-454D-8CE8-D9EC09516FE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter="_x007C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerGroupCustomerId"
-              DTS:DTSID="{4E85FD28-4BD9-46FA-A26A-773590E81FC6}"
+              DTS:DTSID="{A487A218-5B0B-48CD-86E6-DAFD73F6573C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PreferredContactMethodName"
+              DTS:DTSID="{ACF66303-BBAD-4116-A7B1-26A47E1C6CBB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="250"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerNote"
+              DTS:DTSID="{5ECC5D5E-4BD1-4202-B9A0-699BD02D38E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCounty"
+              DTS:DTSID="{31E18E97-AC09-43AF-8B1C-FD268EEDEA97}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCreatedByUserID"
+              DTS:DTSID="{D49227B9-E1AA-4406-82DC-6BFE1896B687}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerLastModifiedByUserID"
+              DTS:DTSID="{6649512D-84B7-42B5-B05F-6B8EAEB8EB5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ServiceRepUserID"
+              DTS:DTSID="{5154A16C-1039-4EDF-8A62-1F45E13ACECC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ServiceSalesRepUserID"
+              DTS:DTSID="{2E6F1B00-23F8-4C30-AD3C-B836EE0887F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerTitle"
+              DTS:DTSID="{AD87945A-3509-4D6E-84AA-2DADE1969513}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerSuffix"
+              DTS:DTSID="{C74E2DA7-6548-4CAE-ABA1-603C2C688FBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerNickName"
+              DTS:DTSID="{596E6A8B-63B4-49D0-ADEE-C22DEDE007E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HasLicenseCapture"
+              DTS:DTSID="{0657CC66-B9BB-42FB-8AC0-2B88E97C286A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LicenseCaptureLastModifiedByUserID"
+              DTS:DTSID="{F146AC14-4DE9-4311-9D72-F9172D62B540}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LicenseCaptureMinDatetimeDLT"
+              DTS:DTSID="{84D5868A-F434-4B71-83A7-0642796EEC8D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LicenseCaptureMaxDatetimeDLT"
+              DTS:DTSID="{2F93F2BA-AC4F-497D-824A-49B3182715AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OptedOutOfDataSharing"
+              DTS:DTSID="{DA2008C3-1FE9-4FCB-AD3D-1DB6A8131497}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OptedOutOfTargetedAds"
+              DTS:DTSID="{88A44F31-47FD-440D-8AEE-D0756328DCDA}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1214,7 +1349,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_Customer ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC dbo.usp_upsert_Customer_7 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?,?, ?, ?, ?, ?,?, ?, ?, ?, ?,?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1223,7 +1358,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Execute Customer SP.Connections[OleDbConnection]"
-                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
+                  connectionManagerID="{15DD7BA4-CD70-480B-BBC4-F739BB18503E}:external"
                   connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -1258,7 +1393,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="50"
                       cachedName="CustomerType"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerType]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerType]" />
@@ -1274,7 +1409,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerFirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="50"
                       cachedName="CustomerFirstName"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerFirstName]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerFirstName]" />
@@ -1282,7 +1417,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerMiddleName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="50"
                       cachedName="CustomerMiddleName"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerMiddleName]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerMiddleName]" />
@@ -1290,7 +1425,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerLastName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="50"
                       cachedName="CustomerLastName"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerLastName]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerLastName]" />
@@ -1298,7 +1433,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CompanyName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="255"
                       cachedName="CompanyName"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CompanyName]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CompanyName]" />
@@ -1340,7 +1475,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[IsSalesCustomer]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[IsServiceCustomer]"
-                      cachedDataType="bool"
+                      cachedDataType="i4"
                       cachedName="IsServiceCustomer"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@IsServiceCustomer]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[IsServiceCustomer]" />
@@ -1360,7 +1495,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[PostalCode]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="10"
+                      cachedLength="11"
                       cachedName="PostalCode"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@PostalCode]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[PostalCode]" />
@@ -1368,7 +1503,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[DayTimePhone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="30"
                       cachedName="DayTimePhone"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@DayTimePhone]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DayTimePhone]" />
@@ -1376,7 +1511,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[DayTimePhoneExt]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="12"
+                      cachedLength="10"
                       cachedName="DayTimePhoneExt"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@DayTimePhoneExt]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DayTimePhoneExt]" />
@@ -1384,7 +1519,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[EveningPhone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="30"
                       cachedName="EveningPhone"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@EveningPhone]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EveningPhone]" />
@@ -1392,7 +1527,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[EveningPhoneExt]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="12"
+                      cachedLength="10"
                       cachedName="EveningPhoneExt"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@EveningPhoneExt]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EveningPhoneExt]" />
@@ -1400,7 +1535,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CellPhone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="30"
                       cachedName="CellPhone"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CellPhone]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CellPhone]" />
@@ -1408,7 +1543,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[Fax]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="30"
                       cachedName="Fax"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@Fax]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Fax]" />
@@ -1416,7 +1551,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[Email]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="200"
+                      cachedLength="150"
                       cachedName="Email"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@Email]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Email]" />
@@ -1424,7 +1559,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[AlternateEmail]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="200"
+                      cachedLength="150"
                       cachedName="AlternateEmail"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@AlternateEmail]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[AlternateEmail]" />
@@ -1468,27 +1603,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[EBRSource]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="50"
                       cachedName="EBRSource"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@EBRSource]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EBRSource]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[EBRDate]"
-                      cachedDataType="dbTimeStamp"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="EBRDate"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@EBRDate]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EBRDate]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[EBRExpiration]"
-                      cachedDataType="dbTimeStamp"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="EBRExpiration"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@EBRExpiration]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EBRExpiration]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[ExpressConsent]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="bool"
                       cachedName="ExpressConsent"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@ExpressConsent]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsent]" />
@@ -1496,7 +1633,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[ExpressConsentSource]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="100"
+                      cachedLength="250"
                       cachedName="ExpressConsentSource"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@ExpressConsentSource]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsentSource]" />
@@ -1504,7 +1641,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CompliancePreferredEmail]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="200"
+                      cachedLength="150"
                       cachedName="CompliancePreferredEmail"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CompliancePreferredEmail]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CompliancePreferredEmail]" />
@@ -1516,9 +1653,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsentLastModifiedUTCDate]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[ExpressConsentLastModifiedByUser]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="i4"
                       cachedName="ExpressConsentLastModifiedByUser"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@ExpressConsentLastModifiedByUser]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsentLastModifiedByUser]" />
@@ -1538,10 +1673,110 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[PreferredContactMethod]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="1"
                       cachedName="PreferredContactMethod"
                       externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@PreferredContactMethodName]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[PreferredContactMethod]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerNote]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="CustomerNote"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerNote]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerNote]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[LicenseCaptureMaxDatetimeDLT]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LicenseCaptureMaxDatetimeDLT"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@LicenseCaptureMaxDatetimeDLT]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureMaxDatetimeDLT]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[OptedOutOfDataSharing]"
+                      cachedDataType="bool"
+                      cachedName="OptedOutOfDataSharing"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@OptedOutOfDataSharing]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[OptedOutOfDataSharing]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[ServiceSalesRepUserID]"
+                      cachedDataType="i4"
+                      cachedName="ServiceSalesRepUserID"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@ServiceSalesRepUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ServiceSalesRepUserID]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[ServiceRepUserID]"
+                      cachedDataType="i4"
+                      cachedName="ServiceRepUserID"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@ServiceRepUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ServiceRepUserID]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerCounty]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerCounty"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerCounty]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerCounty]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerCreatedByUserID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerCreatedByUserID"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerCreatedByUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerCreatedByUserID]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerLastModifiedByUserID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerLastModifiedByUserID"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerLastModifiedByUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerLastModifiedByUserID]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerTitle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerTitle"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerTitle]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerTitle]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerSuffix]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerSuffix"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerSuffix]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerSuffix]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[CustomerNickName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerNickName"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerNickName]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerNickName]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[HasLicenseCapture]"
+                      cachedDataType="bool"
+                      cachedName="HasLicenseCapture"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@HasLicenseCapture]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[HasLicenseCapture]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[LicenseCaptureLastModifiedByUserID]"
+                      cachedDataType="i4"
+                      cachedName="LicenseCaptureLastModifiedByUserID"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@LicenseCaptureLastModifiedByUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureLastModifiedByUserID]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[LicenseCaptureMinDatetimeDLT]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LicenseCaptureMinDatetimeDLT"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@LicenseCaptureMinDatetimeDLT]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureMinDatetimeDLT]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].Columns[OptedOutOfTargetedAds]"
+                      cachedDataType="bool"
+                      cachedName="OptedOutOfTargetedAds"
+                      externalMetadataColumnId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@OptedOutOfTargetedAds]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[OptedOutOfTargetedAds]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2071,6 +2306,184 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="DBParamInfoFlags">65</property>
                       </properties>
                     </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerNote]"
+                      codePage="1252"
+                      dataType="text"
+                      name="@CustomerNote">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">193</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerCounty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@CustomerCounty">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerCreatedByUserID]"
+                      dataType="i4"
+                      name="@CustomerCreatedByUserID">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerLastModifiedByUserID]"
+                      dataType="i4"
+                      name="@CustomerLastModifiedByUserID">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@ServiceRepUserID]"
+                      dataType="i4"
+                      name="@ServiceRepUserID">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@ServiceSalesRepUserID]"
+                      dataType="i4"
+                      name="@ServiceSalesRepUserID">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="@CustomerTitle">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerSuffix]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@CustomerSuffix">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerNickName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@CustomerNickName">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@HasLicenseCapture]"
+                      dataType="bool"
+                      name="@HasLicenseCapture">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@LicenseCaptureLastModifiedByUserID]"
+                      dataType="i4"
+                      name="@LicenseCaptureLastModifiedByUserID">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@LicenseCaptureMinDatetimeDLT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@LicenseCaptureMinDatetimeDLT">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@LicenseCaptureMaxDatetimeDLT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@LicenseCaptureMaxDatetimeDLT">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@OptedOutOfDataSharing]"
+                      dataType="bool"
+                      name="@OptedOutOfDataSharing">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute Customer SP.Inputs[OLE DB Command Input].ExternalColumns[@OptedOutOfTargetedAds]"
+                      dataType="bool"
+                      name="@OptedOutOfTargetedAds">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2114,7 +2527,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               localeId="1033"
               name="Read CSV File"
               usesDispositions="true"
-              validateExternalMetadata="True"
               version="1">
               <properties>
                 <property
@@ -2129,8 +2541,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Read CSV File.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[CustomerConn]"
-                  connectionManagerRefId="Package.ConnectionManagers[CustomerConn]"
+                  connectionManagerID="Package.ConnectionManagers[CustomerConnBigger]"
+                  connectionManagerRefId="Package.ConnectionManagers[CustomerConnBigger]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -2205,7 +2617,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerType]"
-                      length="20"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerType]"
                       name="CustomerType"
                       truncationRowDisposition="FailComponent">
@@ -2249,7 +2661,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerFirstName]"
-                      length="100"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerFirstName]"
                       name="CustomerFirstName"
                       truncationRowDisposition="FailComponent">
@@ -2271,7 +2683,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerMiddleName]"
-                      length="100"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerMiddleName]"
                       name="CustomerMiddleName"
                       truncationRowDisposition="FailComponent">
@@ -2293,7 +2705,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerLastName]"
-                      length="100"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerLastName]"
                       name="CustomerLastName"
                       truncationRowDisposition="FailComponent">
@@ -2315,7 +2727,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CompanyName]"
-                      length="100"
+                      length="255"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CompanyName]"
                       name="CompanyName"
                       truncationRowDisposition="FailComponent">
@@ -2452,7 +2864,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[IsServiceCustomer]"
-                      dataType="bool"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[IsServiceCustomer]"
@@ -2517,7 +2929,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[PostalCode]"
-                      length="10"
+                      length="11"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[PostalCode]"
                       name="PostalCode"
                       truncationRowDisposition="IgnoreFailure">
@@ -2539,7 +2951,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DayTimePhone]"
-                      length="20"
+                      length="30"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DayTimePhone]"
                       name="DayTimePhone"
                       truncationRowDisposition="FailComponent">
@@ -2561,7 +2973,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DayTimePhoneExt]"
-                      length="12"
+                      length="10"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DayTimePhoneExt]"
                       name="DayTimePhoneExt"
                       truncationRowDisposition="FailComponent">
@@ -2583,7 +2995,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EveningPhone]"
-                      length="20"
+                      length="30"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EveningPhone]"
                       name="EveningPhone"
                       truncationRowDisposition="FailComponent">
@@ -2605,7 +3017,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EveningPhoneExt]"
-                      length="12"
+                      length="10"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EveningPhoneExt]"
                       name="EveningPhoneExt"
                       truncationRowDisposition="FailComponent">
@@ -2627,7 +3039,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CellPhone]"
-                      length="20"
+                      length="30"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CellPhone]"
                       name="CellPhone"
                       truncationRowDisposition="FailComponent">
@@ -2649,7 +3061,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Fax]"
-                      length="20"
+                      length="30"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Fax]"
                       name="Fax"
                       truncationRowDisposition="FailComponent">
@@ -2671,7 +3083,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Email]"
-                      length="200"
+                      length="150"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Email]"
                       name="Email"
                       truncationRowDisposition="FailComponent">
@@ -2693,7 +3105,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[AlternateEmail]"
-                      length="200"
+                      length="150"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[AlternateEmail]"
                       name="AlternateEmail"
                       truncationRowDisposition="FailComponent">
@@ -2835,7 +3247,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EBRSource]"
-                      length="100"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EBRSource]"
                       name="EBRSource"
                       truncationRowDisposition="FailComponent">
@@ -2852,10 +3264,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EBRDate]"
-                      dataType="dbTimeStamp"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EBRDate]"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EBRDate]"
                       name="EBRDate"
                       truncationRowDisposition="FailComponent">
@@ -2872,10 +3286,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EBRExpiration]"
-                      dataType="dbTimeStamp"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EBRExpiration]"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[EBRExpiration]"
                       name="EBRExpiration"
                       truncationRowDisposition="FailComponent">
@@ -2892,12 +3308,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsent]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ExpressConsent]"
-                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsent]"
                       name="ExpressConsent"
                       truncationRowDisposition="FailComponent">
@@ -2919,7 +3333,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ExpressConsentSource]"
-                      length="100"
+                      length="250"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsentSource]"
                       name="ExpressConsentSource"
                       truncationRowDisposition="FailComponent">
@@ -2941,7 +3355,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CompliancePreferredEmail]"
-                      length="200"
+                      length="150"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CompliancePreferredEmail]"
                       name="CompliancePreferredEmail"
                       truncationRowDisposition="FailComponent">
@@ -2978,12 +3392,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsentLastModifiedByUser]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ExpressConsentLastModifiedByUser]"
-                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ExpressConsentLastModifiedByUser]"
                       name="ExpressConsentLastModifiedByUser"
                       truncationRowDisposition="FailComponent">
@@ -3045,7 +3457,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerAddress]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerAddress]"
                       name="CustomerAddress"
                       truncationRowDisposition="FailComponent">
@@ -3089,7 +3501,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerState]"
-                      length="50"
+                      length="2"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerState]"
                       name="CustomerState"
                       truncationRowDisposition="FailComponent">
@@ -3111,7 +3523,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[PreferredContactMethod]"
-                      length="50"
+                      length="1"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[PreferredContactMethod]"
                       name="PreferredContactMethod"
                       truncationRowDisposition="FailComponent">
@@ -3133,9 +3545,341 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[PreferredContactTime]"
-                      length="50"
+                      length="1"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[PreferredContactTime]"
                       name="PreferredContactTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[PreferredContactMethodName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[PreferredContactMethodName]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[PreferredContactMethodName]"
+                      name="PreferredContactMethodName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerNote]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerNote]"
+                      length="250"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerNote]"
+                      name="CustomerNote"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerCounty]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerCounty]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerCounty]"
+                      name="CustomerCounty"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerCreatedByUserID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerCreatedByUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerCreatedByUserID]"
+                      name="CustomerCreatedByUserID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerLastModifiedByUserID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerLastModifiedByUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerLastModifiedByUserID]"
+                      name="CustomerLastModifiedByUserID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ServiceRepUserID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ServiceRepUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ServiceRepUserID]"
+                      name="ServiceRepUserID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ServiceSalesRepUserID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ServiceSalesRepUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[ServiceSalesRepUserID]"
+                      name="ServiceSalesRepUserID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerTitle]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerTitle]"
+                      name="CustomerTitle"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerSuffix]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerSuffix]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerSuffix]"
+                      name="CustomerSuffix"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerNickName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerNickName]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerNickName]"
+                      name="CustomerNickName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[HasLicenseCapture]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[HasLicenseCapture]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[HasLicenseCapture]"
+                      name="HasLicenseCapture"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureLastModifiedByUserID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LicenseCaptureLastModifiedByUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureLastModifiedByUserID]"
+                      name="LicenseCaptureLastModifiedByUserID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureMinDatetimeDLT]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LicenseCaptureMinDatetimeDLT]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureMinDatetimeDLT]"
+                      name="LicenseCaptureMinDatetimeDLT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureMaxDatetimeDLT]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LicenseCaptureMaxDatetimeDLT]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LicenseCaptureMaxDatetimeDLT]"
+                      name="LicenseCaptureMaxDatetimeDLT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[OptedOutOfDataSharing]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[OptedOutOfDataSharing]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[OptedOutOfDataSharing]"
+                      name="OptedOutOfDataSharing"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[OptedOutOfTargetedAds]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[OptedOutOfTargetedAds]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[OptedOutOfTargetedAds]"
+                      name="OptedOutOfTargetedAds"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -3167,7 +3911,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerType]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="50"
                       name="CustomerType" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerStatus]"
@@ -3179,25 +3923,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerFirstName]"
                       codePage="1252"
                       dataType="str"
-                      length="100"
+                      length="50"
                       name="CustomerFirstName" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerMiddleName]"
                       codePage="1252"
                       dataType="str"
-                      length="100"
+                      length="50"
                       name="CustomerMiddleName" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerLastName]"
                       codePage="1252"
                       dataType="str"
-                      length="100"
+                      length="50"
                       name="CustomerLastName" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerAddress]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="CustomerAddress" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerCity]"
@@ -3209,13 +3953,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerState]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="2"
                       name="CustomerState" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CompanyName]"
                       codePage="1252"
                       dataType="str"
-                      length="100"
+                      length="255"
                       name="CompanyName" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[SalesMgrUserID]"
@@ -3243,7 +3987,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       name="IsSalesCustomer" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[IsServiceCustomer]"
-                      dataType="bool"
+                      dataType="i4"
                       name="IsServiceCustomer" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LastInboundContactUTCDate]"
@@ -3257,55 +4001,55 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[PostalCode]"
                       codePage="1252"
                       dataType="str"
-                      length="10"
+                      length="11"
                       name="PostalCode" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DayTimePhone]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="30"
                       name="DayTimePhone" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DayTimePhoneExt]"
                       codePage="1252"
                       dataType="str"
-                      length="12"
+                      length="10"
                       name="DayTimePhoneExt" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EveningPhone]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="30"
                       name="EveningPhone" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EveningPhoneExt]"
                       codePage="1252"
                       dataType="str"
-                      length="12"
+                      length="10"
                       name="EveningPhoneExt" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CellPhone]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="30"
                       name="CellPhone" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Fax]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="30"
                       name="Fax" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Email]"
                       codePage="1252"
                       dataType="str"
-                      length="200"
+                      length="150"
                       name="Email" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[AlternateEmail]"
                       codePage="1252"
                       dataType="str"
-                      length="200"
+                      length="150"
                       name="AlternateEmail" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DoNotMail]"
@@ -3335,33 +4079,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EBRSource]"
                       codePage="1252"
                       dataType="str"
-                      length="100"
+                      length="50"
                       name="EBRSource" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EBRDate]"
-                      dataType="dbTimeStamp"
-                      name="EBRDate" />
-                    <externalMetadataColumn
-                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EBRExpiration]"
-                      dataType="dbTimeStamp"
-                      name="EBRExpiration" />
-                    <externalMetadataColumn
-                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ExpressConsent]"
                       codePage="1252"
                       dataType="str"
                       length="50"
+                      name="EBRDate" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[EBRExpiration]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EBRExpiration" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ExpressConsent]"
+                      dataType="bool"
                       name="ExpressConsent" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ExpressConsentSource]"
                       codePage="1252"
                       dataType="str"
-                      length="100"
+                      length="250"
                       name="ExpressConsentSource" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CompliancePreferredEmail]"
                       codePage="1252"
                       dataType="str"
-                      length="200"
+                      length="150"
                       name="CompliancePreferredEmail" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ExpressConsentLastModifiedUTCDate]"
@@ -3369,9 +4115,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       name="ExpressConsentLastModifiedUTCDate" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ExpressConsentLastModifiedByUser]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i4"
                       name="ExpressConsentLastModifiedByUser" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CanText]"
@@ -3381,13 +4125,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[PreferredContactMethod]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1"
                       name="PreferredContactMethod" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[PreferredContactTime]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1"
                       name="PreferredContactTime" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CreatedUTCDate]"
@@ -3413,6 +4157,82 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       dataType="str"
                       length="50"
                       name="DealerGroupCustomerId" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[PreferredContactMethodName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PreferredContactMethodName" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerNote]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="CustomerNote" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerCounty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerCounty" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerCreatedByUserID]"
+                      dataType="i4"
+                      name="CustomerCreatedByUserID" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerLastModifiedByUserID]"
+                      dataType="i4"
+                      name="CustomerLastModifiedByUserID" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ServiceRepUserID]"
+                      dataType="i4"
+                      name="ServiceRepUserID" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[ServiceSalesRepUserID]"
+                      dataType="i4"
+                      name="ServiceSalesRepUserID" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerTitle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerTitle" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerSuffix]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerSuffix" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerNickName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerNickName" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[HasLicenseCapture]"
+                      dataType="bool"
+                      name="HasLicenseCapture" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LicenseCaptureLastModifiedByUserID]"
+                      dataType="i4"
+                      name="LicenseCaptureLastModifiedByUserID" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LicenseCaptureMinDatetimeDLT]"
+                      dataType="dbTimeStamp"
+                      name="LicenseCaptureMinDatetimeDLT" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LicenseCaptureMaxDatetimeDLT]"
+                      dataType="dbTimeStamp"
+                      name="LicenseCaptureMaxDatetimeDLT" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[OptedOutOfDataSharing]"
+                      dataType="bool"
+                      name="OptedOutOfDataSharing" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[OptedOutOfTargetedAds]"
+                      dataType="bool"
+                      name="OptedOutOfTargetedAds" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -4115,25 +4935,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="194,42"
           Id="Package\Import CSV File\Read CSV File"
-          TopLeft="56,47" />
+          TopLeft="58,47" />
         <NodeLayout
           Size="179,42"
           Id="Package\Import CSV File\Execute Customer SP"
           TopLeft="56,188" />
         <EdgeLayout
           Id="Package\Import CSV File.Paths[Flat File Source Output]"
-          TopLeft="149.25,89">
+          TopLeft="155,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,99"
+              EndConnector="-9.5,99"
               Start="0,0"
-              End="0,91.5">
+              End="-9.5,91.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,91.5" />
+                    End="0,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.5"
+                    Point2="0,49.5"
+                    Point3="-4,49.5" />
+                  <mssgle:LineSegment
+                    End="-5.5,49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.5,49.5"
+                    Point2="-9.5,49.5"
+                    Point3="-9.5,53.5" />
+                  <mssgle:LineSegment
+                    End="-9.5,91.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

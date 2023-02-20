@@ -13,16 +13,37 @@
   DTS:ObjectName="communicationdetailtext"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="59"
-  DTS:VersionGUID="{DE7B00B3-0398-4C2B-958F-91CB33592A2B}">
+  DTS:VersionBuild="73"
+  DTS:VersionGUID="{7C8F4C96-3E26-4220-9EB5-8020A49D78A5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9AD88A9B-E9ED-4BFD-BAEF-C385947EB425}"
+      DTS:ObjectName="10.254.162.196.REYDATA.users">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.254.162.196;User ID=users;Initial Catalog=REYDATA;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="aJUixCw/fw=="
+            IV="tY/E0JWVh0c=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>tY/E0JWVh0fefHyrWSrj/lcs3HZSkGbr4v0HJGZ/0W5KApXEfz8sUlROz6My/cmfuW6PaLKDbbde02SFT00aB2ovsKv+buVAY2Vssd3wTEslMG6e3SnGx065ew/NBMcIpVjkuy0N88h74jauhlU5OZclJKfRuM/jxjZp/tsI9eE=</CipherValue>
+            </CipherData>
+          </EncryptedData>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TextConnFF]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{1C37A260-69E2-4FFB-8662-281058413F53}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:DTSID="{56259666-3E0C-4B4E-9C07-09DE8B4D545D}"
+      DTS:ObjectName="TextConnFF">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::CSVFile]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -38,42 +59,42 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerID"
-              DTS:DTSID="{CC0F8169-36E1-434D-B78C-C1F9233B92F8}"
+              DTS:DTSID="{8DC1C6CB-C3BA-4D56-B065-956F48176C99}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="MessageID"
-              DTS:DTSID="{4761E925-EC83-41C1-9C94-F38A8A56AB14}"
+              DTS:DTSID="{917026C9-BCA9-4A74-86D7-8BB0DC8E7911}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="UserID"
-              DTS:DTSID="{5848D192-B53A-458E-AB38-98D2317A1122}"
+              DTS:DTSID="{C946EEDE-561F-472C-B671-97767FC54C25}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadID"
-              DTS:DTSID="{1D02CDF3-50B0-431D-B0DA-57C3B9E9B51D}"
+              DTS:DTSID="{444D0296-F6BA-4DCE-BE40-587219CE659E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{FF311AF4-5CF3-4636-A41E-B68FF6FBEC92}"
+              DTS:DTSID="{9D465E09-BCD4-44A5-8FF7-CD54FEA01B9A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -81,7 +102,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="MessageUTCDate"
-              DTS:DTSID="{4B81E86E-161F-4F49-B46B-A9D50597F53D}"
+              DTS:DTSID="{959F9BB4-B320-421B-9CA5-E81D021ACE92}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -89,15 +110,15 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{83246B9F-6BF4-4619-BF2C-E74849D91401}"
+              DTS:DTSID="{A35AD7C5-ECB4-4310-AE11-C29048EBC097}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="CommunicationTypeCode"
-              DTS:DTSID="{8617444B-4DE2-4B18-AA19-3AE705F7F495}"
+              DTS:DTSID="{E76317FF-78F4-438C-9BEE-B50AD77ACF61}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -106,7 +127,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerPhoneNumber"
-              DTS:DTSID="{2B020A99-0E6B-4375-82A7-895B71CC9E90}"
+              DTS:DTSID="{DBFEE13C-857C-459B-BA28-29AA58D2CB1D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -115,7 +136,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="UserPhoneNumber"
-              DTS:DTSID="{D28596A2-3CC2-44C2-9D9F-24B4BA2AF7CE}"
+              DTS:DTSID="{AD33B2E1-507F-469F-9793-7E3C81A7EE0A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +144,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="HasTextAttachment"
-              DTS:DTSID="{0B0A677B-FA48-487F-B504-7F4BFA49E69F}"
+              DTS:DTSID="{B3602A07-5375-4972-A015-B4FBBD1FBA9A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,7 +152,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsOptInRequest"
-              DTS:DTSID="{CAE36701-43A1-4526-92E5-9905ECB0F214}"
+              DTS:DTSID="{75DB4F8E-7E2A-4F24-B088-597087E103B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +160,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsOptInConfirmation"
-              DTS:DTSID="{4104A45A-87FB-43E7-B78F-12F5CF962C42}"
+              DTS:DTSID="{851ADC3D-F848-4C96-928C-45072D613824}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,16 +168,16 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsOptOutConfirmation"
-              DTS:DTSID="{A81B1B3F-9290-41A7-B035-14E1C9A3A0E2}"
+              DTS:DTSID="{30209C02-8E1A-42AB-B18D-B903F27463D9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="500"
+              DTS:MaximumWidth="600"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MessageContent"
-              DTS:DTSID="{F8C13964-585A-4DB3-991B-3DA461A5EAB0}"
+              DTS:DTSID="{C49FDEAF-A2F1-4D30-8B9E-993FF14C74C3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -215,35 +236,14 @@
           ReadOnlyVariables="CSVFileName, OrigZipFileName, ProcessedZipfileName"
           ReadWriteVariables="User::CSVFile,User::OrigZipFile,User::ProcessedZipFile">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_e937cf18c7194891b96145fdb376a027")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_e937cf18c7194891b96145fdb376a027")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -623,14 +623,35 @@ namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_e937cf18c7194891b96145fdb376a027")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_e937cf18c7194891b96145fdb376a027")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -883,7 +904,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
               name="Execute CommunicationDetailText SP"
               usesDispositions="true"
-              validateExternalMetadata="True"
               version="2">
               <properties>
                 <property
@@ -904,8 +924,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Execute CommunicationDetailText SP.Connections[OleDbConnection]"
-                  connectionManagerID="{F57D7CB5-00E0-473A-A70D-CB3B34DDE01F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[10.254.162.196.REYDATA.users]"
+                  connectionManagerID="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.254.162.196.REYDATA.users]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1006,7 +1026,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       cachedDataType="dbTimeStamp"
                       cachedName="MessageUTCDate"
                       externalMetadataColumnId="Package\Import CSV File\Execute CommunicationDetailText SP.Inputs[OLE DB Command Input].ExternalColumns[@MessageDate]"
-                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[MessageUTCDate]" />
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[MessageUTCDate]"
+                      name="MessageUTCDate" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute CommunicationDetailText SP.Inputs[OLE DB Command Input].Columns[MessageContent]"
                       cachedCodepage="1252"
@@ -1180,7 +1201,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute CommunicationDetailText SP.Inputs[OLE DB Command Input].ExternalColumns[@MessageContent]"
                       codePage="1252"
                       dataType="str"
-                      length="300"
+                      length="500"
                       name="@MessageContent">
                       <properties>
                         <property
@@ -1232,7 +1253,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               localeId="1033"
               name="Read CSV File"
               usesDispositions="true"
-              validateExternalMetadata="True"
               version="1">
               <properties>
                 <property
@@ -1247,8 +1267,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               <connections>
                 <connection
                   refId="Package\Import CSV File\Read CSV File.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[TextConnFF]"
+                  connectionManagerRefId="Package.ConnectionManagers[TextConnFF]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1569,23 +1589,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DealerID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="DealerID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[MessageID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="MessageID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LeadID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="LeadID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[UserID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="UserID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="CustomerID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerPhoneNumber]"
@@ -1601,7 +1621,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       name="UserPhoneNumber" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CommunicationTypeCode]"
-                      dataType="i4"
+                      dataType="i8"
                       name="CommunicationTypeCode" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[HasTextAttachment]"
@@ -1627,7 +1647,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[MessageContent]"
                       codePage="1252"
                       dataType="str"
-                      length="500"
+                      length="600"
                       name="MessageContent" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[MessageUTCDate]"
@@ -1692,6 +1712,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="User::ZipFileToProcess">
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_5a832db1905d40669c368e3c5d89c1b2")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_5a832db1905d40669c368e3c5d89c1b2")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1811,35 +1861,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Settings.get_Default():ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Sett" +
-    "ings")]
-
-namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -1982,35 +2003,34 @@ namespace ST_5a832db1905d40669c368e3c5d89c1b2
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_5a832db1905d40669c368e3c5d89c1b2")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_5a832db1905d40669c368e3c5d89c1b2")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Settings.get_Default():ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -2249,7 +2269,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Delete CSV File"
           TopLeft="487,125" />
         <NodeLayout
-          Size="152,42"
+          Size="153,42"
           Id="Package\Import CSV File"
           TopLeft="200,118.5" />
         <NodeLayout
@@ -2262,9 +2282,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15,49.5"
+              EndConnector="-14.6666666666667,49.5"
               Start="0,0"
-              End="-15,42">
+              End="-14.6666666666667,42">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2275,13 +2295,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point2="0,24.75"
                     Point3="-4,24.75" />
                   <mssgle:LineSegment
-                    End="-11,24.75" />
+                    End="-10.6666666666667,24.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="-11,24.75"
-                    Point2="-15,24.75"
-                    Point3="-15,28.75" />
+                    Point1="-10.6666666666667,24.75"
+                    Point2="-14.6666666666667,24.75"
+                    Point3="-14.6666666666667,28.75" />
                   <mssgle:LineSegment
-                    End="-15,42" />
+                    End="-14.6666666666667,42" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2292,13 +2312,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="276,160.5">
+          TopLeft="276.333333333333,160.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="21,66.5"
+              EndConnector="20.6666666666667,66.5"
               Start="0,0"
-              End="21,59">
+              End="20.6666666666667,59">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2309,13 +2329,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point2="0,33.25"
                     Point3="4,33.25" />
                   <mssgle:LineSegment
-                    End="17,33.25" />
+                    End="16.6666666666667,33.25" />
                   <mssgle:CubicBezierSegment
-                    Point1="17,33.25"
-                    Point2="21,33.25"
-                    Point3="21,37.25" />
+                    Point1="16.6666666666667,33.25"
+                    Point2="20.6666666666667,33.25"
+                    Point3="20.6666666666667,37.25" />
                   <mssgle:LineSegment
-                    End="21,59" />
+                    End="20.6666666666667,59" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2326,25 +2346,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="352,142.75">
+          TopLeft="352.666666666667,142.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="135,0"
+              EndConnector="134.333333333333,0"
               Start="0,0"
-              End="127.5,0">
+              End="126.833333333333,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="127.5,0" />
+                    End="126.833333333333,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="48.50865234375,5,30.4826953125,9.7490234375"
+              BoundingBox="48.1753190104167,5,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2359,20 +2379,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="255,42"
           Id="Package\Import CSV File\Execute CommunicationDetailText SP"
-          TopLeft="55,188" />
+          TopLeft="55.8333333209157,188" />
         <NodeLayout
-          Size="194,42"
+          Size="145,42"
           Id="Package\Import CSV File\Read CSV File"
           TopLeft="56,47" />
         <EdgeLayout
           Id="Package\Import CSV File.Paths[Flat File Source Output]"
-          TopLeft="153,89">
+          TopLeft="128.5,89">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="29.5,99"
+              EndConnector="54.8333333209157,99"
               Start="0,0"
-              End="29.5,91.5">
+              End="54.8333333209157,91.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2383,13 +2403,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point2="0,49.5"
                     Point3="4,49.5" />
                   <mssgle:LineSegment
-                    End="25.5,49.5" />
+                    End="50.8333333209157,49.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="25.5,49.5"
-                    Point2="29.5,49.5"
-                    Point3="29.5,53.5" />
+                    Point1="50.8333333209157,49.5"
+                    Point2="54.8333333209157,49.5"
+                    Point3="54.8333333209157,53.5" />
                   <mssgle:LineSegment
-                    End="29.5,91.5" />
+                    End="54.8333333209157,91.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
