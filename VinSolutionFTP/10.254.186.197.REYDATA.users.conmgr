@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="10.254.162.196.REYDATA.users"
+  DTS:ObjectName="10 254 186 197 REYDATA users"
   DTS:DTSID="{15DD7BA4-CD70-480B-BBC4-F739BB18503E}"
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="Data Source=10.254.162.196;Initial Catalog=VINSolutions_API;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      DTS:ConnectionString="Data Source=10.254.186.197;Initial Catalog=VINSolutions_API;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

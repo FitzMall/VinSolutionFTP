@@ -13,8 +13,8 @@
   DTS:ObjectName="LeadTradeinVehicle"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="64"
-  DTS:VersionGUID="{DFE2E532-20A4-401A-99A7-357D80030AAD}">
+  DTS:VersionBuild="67"
+  DTS:VersionGUID="{ADE71905-99A3-4ECB-8DFB-F925E88D3E2A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -38,43 +38,43 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerID"
-              DTS:DTSID="{958C6DC2-A684-40FE-A0CF-0CD5183AC927}"
+              DTS:DTSID="{A89D2126-40A6-460F-94ED-50D7E557FE5E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{CFD35C14-8D76-46E7-8182-B0107F21DCFC}"
+              DTS:DTSID="{29083AD0-CE36-4211-929B-A68BCE01C0AC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadID"
-              DTS:DTSID="{C4C2386B-7E06-4146-B01A-452B0FF8D11D}"
+              DTS:DTSID="{2174EED7-D346-44E8-94CC-3DD5292D37A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="TradeInID"
-              DTS:DTSID="{D8EF1A39-58D1-4B0F-B896-D0F85FFCAD89}"
+              DTS:DTSID="{45F075EC-716B-4925-9AF0-F59E1005D1D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="17"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="VIN"
-              DTS:DTSID="{376B98BF-671F-49E8-811C-6E530F7C0483}"
+              DTS:DTSID="{49E84732-D4A3-43D3-A120-0B3A748B5462}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -82,7 +82,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Year"
-              DTS:DTSID="{44D2F252-B4F6-4EEE-8561-DC66A2DE03C8}"
+              DTS:DTSID="{60339A37-05AC-4D8E-8539-29EF9744CAAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -91,7 +91,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Make"
-              DTS:DTSID="{4FEE61F1-AF45-4E86-976A-4C35C5FC1C9A}"
+              DTS:DTSID="{4060E29B-5A9C-4223-8D2D-3348B58A2DED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -100,7 +100,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Model"
-              DTS:DTSID="{80F4D73A-FFFF-4A66-9306-4EAF75BF385A}"
+              DTS:DTSID="{E7810D1F-E24F-442C-88ED-89C80F81005B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -109,7 +109,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Trim"
-              DTS:DTSID="{6BF62BE4-4EB3-4134-89EC-77D7543A677C}"
+              DTS:DTSID="{4DBD1D5C-C0E0-4F45-844D-E6EC3CE6B842}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -118,7 +118,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="InteriorColor"
-              DTS:DTSID="{7680E263-B2C1-4E20-8328-09A20B46FD3D}"
+              DTS:DTSID="{431CE56A-B358-4328-A2D8-4FC6E6257378}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -127,7 +127,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ExteriorColor"
-              DTS:DTSID="{2371106D-9AEF-4ECC-B3E6-0E430CE57F6E}"
+              DTS:DTSID="{017DEE2D-7FDA-4EF0-8CE5-63FC2C80E859}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -135,16 +135,16 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Odometer"
-              DTS:DTSID="{713250EE-9C52-4A0E-9C4A-41866945D6B7}"
+              DTS:DTSID="{D51B1EA9-C06A-4962-BCFC-825B779DBE10}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="1"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="RecordStatusCode"
-              DTS:DTSID="{38B838AF-90BC-4D4E-B733-8B6C54C991EF}"
+              DTS:DTSID="{C879FCE1-2BB9-4E02-B7EA-86774B8757CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -153,7 +153,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="TradePayoff"
-              DTS:DTSID="{05ADB357-A3A5-466A-8868-4761D617E24E}"
+              DTS:DTSID="{5A2B43C6-6F7D-48E9-9B21-CA3325088473}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -162,7 +162,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="TradeACV"
-              DTS:DTSID="{97D71F20-E492-4089-9BA4-A828012A4805}"
+              DTS:DTSID="{A192F821-D09F-42A6-84DA-7E28869915D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -171,7 +171,7 @@
               DTS:DataPrecision="18"
               DTS:TextQualified="True"
               DTS:ObjectName="TradeAllowance"
-              DTS:DTSID="{4D72ADEE-783B-4979-A27D-EF0C6ECD12E9}"
+              DTS:DTSID="{31A2BBC0-ECDF-4D2A-BBD1-95C25FEFC487}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -179,24 +179,23 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="AppraisalByUserID"
-              DTS:DTSID="{7BEE8662-737E-48F7-A939-D3FDBA791934}"
+              DTS:DTSID="{1C6FF6E0-A625-400A-AFF6-963BFA8D096A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="135"
+              DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="LastUpdatedUTCDate"
-              DTS:DTSID="{30D28FCB-7E0D-4B06-BBBA-3E6A16199413}"
+              DTS:DTSID="{97F9ECD8-1CFD-41E1-A6B6-D3E26DEBCE1C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="500"
-              DTS:DataType="129"
+              DTS:DataType="302"
               DTS:TextQualified="True"
               DTS:ObjectName="TradeInMemo"
-              DTS:DTSID="{F3D7AC04-FC00-4936-9BDB-5EDA2E9E4135}"
+              DTS:DTSID="{C8694DD4-ABE8-4AF4-8900-9B344BEEF2D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -204,16 +203,16 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="IsLease"
-              DTS:DTSID="{2DD943E0-3426-4B74-B870-BD29CADA8FFB}"
+              DTS:DTSID="{A6CC7C86-1D9A-49F1-BCCA-3FDA6F2EF0CB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="20"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Condition"
-              DTS:DTSID="{9776627A-0717-4980-A425-E0C11B5CC444}"
+              DTS:DTSID="{3EF13E29-0A1E-47EF-8A3C-ECEE0361A4E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -222,7 +221,84 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TradeVehicleType"
-              DTS:DTSID="{1B056A34-7DE6-4270-94D6-2285F5FA649C}"
+              DTS:DTSID="{F83014F8-B503-4254-962D-E7BCD4FADA48}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RVCategory"
+              DTS:DTSID="{018AFD22-CC26-45A9-B43D-9E6CA35ECCE5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BodyStyle"
+              DTS:DTSID="{0EC38422-9EFC-4D46-8671-066BFF8FD05E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CreatedByUserID"
+              DTS:DTSID="{101864E9-E296-4315-9F93-33692E91C302}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CreatedUTCDate"
+              DTS:DTSID="{13C20117-14ED-4615-89E5-166DE5040186}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Doors"
+              DTS:DTSID="{478DC2A1-C87C-4BFC-88FF-22055F1BF994}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DriveType"
+              DTS:DTSID="{1A6FA75E-A756-4E5F-AFF2-DA850500E8E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Engine"
+              DTS:DTSID="{0B15B0E1-FF06-4DFC-A01F-0C7BB8434ADD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StockNumber"
+              DTS:DTSID="{269F3672-40C9-4090-9E37-52D65F7A24FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TradeNumber"
+              DTS:DTSID="{D81589EB-6BF1-4A27-8584-8AB70512B54F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,8 +306,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="RVCategory"
-              DTS:DTSID="{642C909A-D250-4EE0-9872-252799ACC03B}"
+              DTS:ObjectName="Transmission"
+              DTS:DTSID="{F630BD30-7789-4C4C-80BF-16A8D8008636}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -512,36 +588,6 @@
           ReadOnlyVariables="CSVFileName, OrigZipFileName, ProcessedZipfileName"
           ReadWriteVariables="User::CSVFile,User::OrigZipFile,User::ProcessedZipFile">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_e937cf18c7194891b96145fdb376a027")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_e937cf18c7194891b96145fdb376a027")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -660,6 +706,35 @@ using System.Runtime.CompilerServices;
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_e937cf18c7194891b96145fdb376a027.Properties.Settings.get_Default():ST_e937cf18c7194891b96145fdb376a027.Properties.Sett" +
+    "ings")]
+
+namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -891,34 +966,35 @@ namespace ST_e937cf18c7194891b96145fdb376a027
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_e937cf18c7194891b96145fdb376a027")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_e937cf18c7194891b96145fdb376a027")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_e937cf18c7194891b96145fdb376a027.Properties.Settings.get_Default():ST_e937cf18c7194891b96145fdb376a027.Properties.Sett" +
-    "ings")]
-
-namespace ST_e937cf18c7194891b96145fdb376a027.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -1126,7 +1202,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.FileSystemTask.FileSystemTask, Microsoft.SqlServer.FileSystemTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Delete CSV File"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
@@ -1191,7 +1267,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC usp_upsert_LeadTradeInVehicle_6 ?, ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?    </property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC usp_upsert_LeadTradeInVehicle_7 ?, ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?  ,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?  </property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1215,19 +1291,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[CustomerID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="CustomerID"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@CustomerID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerID]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[LeadID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="LeadID"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@LeadID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadID]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[TradeInID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="TradeInID"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@TradeInID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeInID]" />
@@ -1249,7 +1325,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[Make]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="50"
                       cachedName="Make"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@Make]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Make]" />
@@ -1304,7 +1380,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       cachedDataType="numeric"
                       cachedName="TradePayoff"
                       cachedPrecision="18"
-                      cachedScale="4"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@TradePayoff]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradePayoff]" />
                     <inputColumn
@@ -1312,7 +1387,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       cachedDataType="numeric"
                       cachedName="TradeACV"
                       cachedPrecision="18"
-                      cachedScale="4"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@TradeACV]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeACV]" />
                     <inputColumn
@@ -1320,14 +1394,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       cachedDataType="numeric"
                       cachedName="TradeAllowance"
                       cachedPrecision="18"
-                      cachedScale="4"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@TradeAllowance]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeAllowance]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[TradeInMemo]"
                       cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="text"
                       cachedName="TradeInMemo"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@TradeInMemo]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeInMemo]" />
@@ -1339,7 +1411,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[AppraisalByUserID]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[LastUpdatedUTCDate]"
-                      cachedDataType="dbTimeStamp"
+                      cachedDataType="date"
                       cachedName="LastUpdatedUTCDate"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@LastUpdatedUTCDate]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LastUpdatedUTCDate]" />
@@ -1347,7 +1419,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[RVCategory]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="50"
                       cachedName="RVCategory"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@RVCategory]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[RVCategory]" />
@@ -1363,7 +1435,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[TradeVehicleType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="20"
+                      cachedLength="50"
                       cachedName="TradeVehicleType"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@TradeVehicleType]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeVehicleType]" />
@@ -1375,10 +1447,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[IsLease]" />
                     <inputColumn
                       refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[DealerID]"
-                      cachedDataType="i4"
+                      cachedDataType="i8"
                       cachedName="DealerID"
                       externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@DealerID]"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DealerID]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[BodyStyle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="BodyStyle"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@BodyStyle]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[BodyStyle]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[CreatedByUserID]"
+                      cachedDataType="i8"
+                      cachedName="CreatedByUserID"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@CreatedByUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CreatedByUserID]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[CreatedUTCDate]"
+                      cachedDataType="date"
+                      cachedName="CreatedUTCDate"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@CreatedUTCDate]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CreatedUTCDate]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[Doors]"
+                      cachedDataType="i4"
+                      cachedName="Doors"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@Doors]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Doors]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[DriveType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DriveType"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@DriveType]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DriveType]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[Engine]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Engine"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@Engine]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Engine]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[StockNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="StockNumber"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@StockNumber]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[StockNumber]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[TradeNumber]"
+                      cachedDataType="i8"
+                      cachedName="TradeNumber"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@TradeNumber]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeNumber]" />
+                    <inputColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].Columns[Transmission]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Transmission"
+                      externalMetadataColumnId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@Transmission]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Transmission]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1663,6 +1799,115 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="DBParamInfoFlags">65</property>
                       </properties>
                     </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@BodyStyle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@BodyStyle">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@CreatedByUserID]"
+                      dataType="i4"
+                      name="@CreatedByUserID">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@CreatedUTCDate]"
+                      dataType="dbTimeStamp"
+                      name="@CreatedUTCDate">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@Doors]"
+                      dataType="i4"
+                      name="@Doors">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@DriveType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@DriveType">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@Engine]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Engine">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@StockNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@StockNumber">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@TradeNumber]"
+                      dataType="i4"
+                      name="@TradeNumber">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Execute LeadTradeInVehicle SP.Inputs[OLE DB Command Input].ExternalColumns[@Transmission]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="@Transmission">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1731,7 +1976,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CustomerID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
@@ -1751,7 +1996,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LeadID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LeadID]"
@@ -1771,7 +2016,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[LastUpdatedUTCDate]"
-                      dataType="dbTimeStamp"
+                      dataType="date"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LastUpdatedUTCDate]"
@@ -1791,7 +2036,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeInID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[TradeInID]"
@@ -1858,7 +2103,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Make]"
-                      length="20"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Make]"
                       name="Make"
                       truncationRowDisposition="RedirectRow">
@@ -2012,7 +2257,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradePayoff]"
                       name="TradePayoff"
                       precision="18"
-                      scale="4"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -2034,7 +2278,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeACV]"
                       name="TradeACV"
                       precision="18"
-                      scale="4"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -2056,7 +2299,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeAllowance]"
                       name="TradeAllowance"
                       precision="18"
-                      scale="4"
                       truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
@@ -2072,11 +2314,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeInMemo]"
                       codePage="1252"
-                      dataType="str"
+                      dataType="text"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[TradeInMemo]"
-                      length="500"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeInMemo]"
                       name="TradeInMemo"
                       truncationRowDisposition="RedirectRow">
@@ -2118,7 +2359,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[TradeVehicleType]"
-                      length="20"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeVehicleType]"
                       name="TradeVehicleType"
                       truncationRowDisposition="RedirectRow">
@@ -2140,7 +2381,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[RVCategory]"
-                      length="20"
+                      length="50"
                       lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[RVCategory]"
                       name="RVCategory"
                       truncationRowDisposition="RedirectRow">
@@ -2199,7 +2440,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DealerID]"
-                      dataType="i4"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DealerID]"
@@ -2217,34 +2458,224 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[BodyStyle]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[BodyStyle]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[BodyStyle]"
+                      name="BodyStyle"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CreatedByUserID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CreatedByUserID]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CreatedByUserID]"
+                      name="CreatedByUserID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CreatedUTCDate]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CreatedUTCDate]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[CreatedUTCDate]"
+                      name="CreatedUTCDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Doors]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Doors]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Doors]"
+                      name="Doors"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DriveType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DriveType]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[DriveType]"
+                      name="DriveType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Engine]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Engine]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Engine]"
+                      name="Engine"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[StockNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[StockNumber]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[StockNumber]"
+                      name="StockNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeNumber]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[TradeNumber]"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[TradeNumber]"
+                      name="TradeNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Transmission]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Transmission]"
+                      length="50"
+                      lineageId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].Columns[Transmission]"
+                      name="Transmission"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DealerID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="DealerID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="CustomerID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LeadID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="LeadID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[LastUpdatedUTCDate]"
-                      dataType="dbTimeStamp"
+                      dataType="date"
                       name="LastUpdatedUTCDate" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[TradeInID]"
-                      dataType="i4"
+                      dataType="i8"
                       name="TradeInID" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[VIN]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="17"
                       name="VIN" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Year]"
@@ -2288,7 +2719,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[RecordStatusCode]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1"
                       name="RecordStatusCode" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[TradePayoff]"
@@ -2308,8 +2739,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[TradeInMemo]"
                       codePage="1252"
-                      dataType="str"
-                      length="500"
+                      dataType="text"
                       name="TradeInMemo" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[AppraisalByUserID]"
@@ -2331,12 +2761,58 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Condition]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="20"
                       name="Condition" />
                     <externalMetadataColumn
                       refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[IsLease]"
                       dataType="bool"
                       name="IsLease" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[BodyStyle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="BodyStyle" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CreatedByUserID]"
+                      dataType="i8"
+                      name="CreatedByUserID" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[CreatedUTCDate]"
+                      dataType="date"
+                      name="CreatedUTCDate" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Doors]"
+                      dataType="i4"
+                      name="Doors" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[DriveType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DriveType" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Engine]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Engine" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[StockNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="StockNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[TradeNumber]"
+                      dataType="i8"
+                      name="TradeNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Import CSV File\Read CSV File.Outputs[Flat File Source Output].ExternalColumns[Transmission]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Transmission" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2387,7 +2863,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set Hidden File Attribute"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -2396,6 +2872,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="User::ZipFileToProcess">
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2515,35 +3000,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Settings.get_Default():ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Sett" +
-    "ings")]
-
-namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -2686,6 +3142,35 @@ namespace ST_5a832db1905d40669c368e3c5d89c1b2
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Settings.get_Default():ST_5a832db1905d40669c368e3c5d89c1b2.Properties.Sett" +
+    "ings")]
+
+namespace ST_5a832db1905d40669c368e3c5d89c1b2.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -2715,15 +3200,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------

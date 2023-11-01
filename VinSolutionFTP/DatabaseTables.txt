@@ -1,14 +1,2 @@
 DatabaseTables
-appointment
-crmsoldtransaction
-customer
-dmssoldtransaction
-inventory
-lead
-leadtradeinvehicle
 leadvehicleofinterest
-roadtothesalestep
-servicevisit
-showroomvisit
-task
-useraccess

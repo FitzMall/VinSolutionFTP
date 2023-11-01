@@ -1,8 +1,5 @@
 DatabaseTables
 appointment
-communicationdetailemail
-communicationdetailphone
-communicationdetailtext
 crmsoldtransaction
 customer
 dealer
@@ -10,12 +7,12 @@ dmssoldtransaction
 emailsubscriptionstatus
 inventory
 lead
-leadnote
 leadsource
 leadstatus
 leadstatuscustom
 leadtradeinvehicle
 leadvehicleofinterest
+roadtothesalestep
 servicevisit
 showroomvisit
 smssubscriptionstatus
